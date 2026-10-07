@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>Southwest Rapid Rewards card, up to 60k bonus points</title>
+<meta name="description" content="Apply for a Southwest Rapid Rewards Chase card and earn up to 60,000 bonus points (up to 80k on business cards for a limited time).">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Southwest Rapid Rewards card, up to 60k bonus points">
+<meta property="og:description" content="Apply for a Southwest Rapid Rewards Chase card and earn up to 60,000 bonus points (up to 80k on business cards for a limited time).">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Southwest Rapid Rewards card, up to 60k bonus points">
+<meta name="twitter:description" content="Apply for a Southwest Rapid Rewards Chase card and earn up to 60,000 bonus points.">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+         font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         background: #f4f6fb; color: #1a1f36; }
+  @media (prefers-color-scheme: dark) { body { background: #111522; color: #e8ebf5; } .card { background: #1b2033; } }
+  .card { max-width: 420px; margin: 24px; padding: 32px 28px; background: #fff; border-radius: 16px;
+          box-shadow: 0 6px 24px rgba(0,0,0,.08); text-align: center; }
+  h1 { font-size: 1.3rem; margin: 0 0 8px; }
+  p { margin: 8px 0; }
+  .muted { opacity: .7; font-size: .9rem; }
+  .spinner { width: 28px; height: 28px; margin: 0 auto 14px; border: 3px solid rgba(48,79,254,.25);
+             border-top-color: #304cb2; border-radius: 50%; animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  a { color: #304cb2; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main class="card">
+  <section id="loading">
+    <div class="spinner" aria-hidden="true"></div>
+    <h1>Taking you to Chase&hellip;</h1>
+    <p class="muted">Southwest Rapid Rewards card referral</p>
+  </section>
+  <section id="closed" hidden>
+    <h1>&#9992;&#65039; This referral link is full for this month</h1>
+    <p>Thanks for the interest! This link has hit its limit for the month.</p>
+    <p class="muted">Check back next month and it&rsquo;ll be open again.</p>
+  </section>
+  <noscript>
+    <style>#loading { display: none; }</style>
+    <h1>Southwest Rapid Rewards card</h1>
+    <p><a href="https://www.referyourchasecard.com/226j/UP4358MAIV" rel="noopener">Continue to the Chase referral page</a></p>
+  </noscript>
+</main>
+<script>
+(function () {
+  "use strict";
+
+  // ===== Settings =====
+  const ENABLED = true;          // Manual kill switch: set to false to always show the "full" page.
+  const CAP = 8;                 // Max counted visits per calendar month (America/Los_Angeles).
+  const TARGET = "https://www.referyourchasecard.com/226j/UP4358MAIV";
+  const COUNTER_BASE = "https://abacus.jasoncameron.dev";
+  const NAMESPACE = "pozai2002-swref";
+  const KEY_PREFIX = "sw-";      // Monthly key looks like sw-2026-10
+  const TIMEOUT_MS = 5000;
+  // ====================
+
+  function showClosed() {
+    document.getElementById("loading").hidden = true;
+    document.getElementById("closed").hidden = false;
+    document.title = "Referral link full for this month";
+  }
+
+  function go() { window.location.replace(TARGET); }
+
+  function monthKey(d) {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit"
+    }).formatToParts(d || new Date());
+    const y = parts.find(function (p) { return p.type === "year"; }).value;
+    const m = parts.find(function (p) { return p.type === "month"; }).value;
+    return KEY_PREFIX + y + "-" + m;
+  }
+
+  async function call(action, key) {
+    const ctrl = typeof AbortController === "function" ? new AbortController() : null;
+    const t = ctrl ? setTimeout(function () { ctrl.abort(); }, TIMEOUT_MS) : null;
+    try {
+      const res = await fetch(COUNTER_BASE + "/" + action + "/" + NAMESPACE + "/" + encodeURIComponent(key),
+                              { cache: "no-store", signal: ctrl ? ctrl.signal : undefined });
+      if (action === "get" && res.status === 404) return 0; // key not created yet this month
+      if (!res.ok) throw new Error("counter HTTP " + res.status);
+      const data = await res.json();
+      const v = Number(data && data.value);
+      if (!Number.isFinite(v)) throw new Error("counter returned no value");
+      return v;
+    } finally {
+      if (t) clearTimeout(t);
+    }
+  }
+
+  async function main() {
+    if (!ENABLED) { showClosed(); return; }
+    const key = monthKey();
+    let count;
+    try {
+      count = await call("get", key);
+    } catch (e) {
+      console.warn("[sw-referral] counter read failed, failing open (not counted):", e);
+      go(); return;
+    }
+    if (count >= CAP) { showClosed(); return; }
+    let after;
+    try {
+      after = await call("hit", key);
+    } catch (e) {
+      console.warn("[sw-referral] counter increment failed, failing open (not counted):", e);
+      go(); return;
+    }
+    // Guard against two visitors racing past the read at the same time.
+    if (after > CAP) { showClosed(); return; }
+    go();
+  }
+
+  main();
+})();
+</script>
+</body>
+</html>
