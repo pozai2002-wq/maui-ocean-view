@@ -16,7 +16,7 @@
   "fcf_note": {
     "fcf_2027_usd": 5400,
     "source": "2027 forecast FCF \u2248 $5.4k after BBP payoff (income \u2212 normalized spend \u2212 BBP)",
-    "fit": "One Low trip on any island fits inside ~$5.4k FCF. Maui Low is the roomiest. Base Maui ~$4.4k fits; Oahu/Kona/Kauai Base are tight or over FCF. High / Fairmont Orchid / Halekulani / Andaz do not fit in FCF alone."
+    "fit": "2027 live: Maui Jan Low ~$4,725 fits ~$5.4k FCF (~$0.7k cushion). Other Lows ~$4.0\u20134.7k. Base/High over FCF."
   },
   "islands": [
     {
@@ -24,40 +24,40 @@
       "code": "OGG",
       "tiers": {
         "low": {
-          "dates": "Nov 10\u201317 2026",
+          "dates": "Jan 19\u201326 2027",
           "flight_usd": 541,
-          "flight_note": "Cash 2-pax RT",
-          "hotel_usd": 1397,
-          "hotel_note": "Kihei Akahi #C-520 \u00b7 Expedia live",
+          "flight_note": "Cash 2-pax RT \u00b7 SFO United",
+          "hotel_usd": 2784,
+          "hotel_note": "Kihei Akahi #C-520 \u00b7 Expedia live Jan",
           "other_usd": 1400,
           "other_note": "Lean meals + ground + activities (default low band)",
-          "all_in_usd": 3338,
+          "all_in_usd": 4725,
           "stay_example": "Kihei Akahi #C-520 condo",
-          "stay_url": "https://www.expedia.com/Kihei-Hotels-Kihei-Akahi-C-520-Tastefully-Updated.h56513057.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "stay_url": "https://www.expedia.com/Kihei-Hotels-Kihei-Akahi-C-520-Tastefully-Updated.h56513057.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
         },
         "base": {
-          "dates": "Nov 10\u201317 2026",
+          "dates": "Jan 19\u201326 2027",
           "flight_usd": 541,
           "flight_note": "Cash 2-pax RT",
-          "hotel_usd": 2025,
-          "hotel_note": "Mana Kai Maui beachfront \u00b7 Expedia live",
+          "hotel_usd": 5347,
+          "hotel_note": "Mana Kai 2BR (1BR sold out) \u00b7 Expedia live \u2014 pricey for Base",
           "other_usd": 1800,
           "other_note": "Fuller Dot-like other (default base band)",
-          "all_in_usd": 4366,
-          "stay_example": "Mana Kai Maui \u00b7 beachfront Kihei",
-          "stay_url": "https://www.expedia.com/Kihei-Hotels-Mana-Kai-Maui.h27810.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "all_in_usd": 7688,
+          "stay_example": "Mana Kai Maui \u00b7 2BR Ali\u02bbi ocean view",
+          "stay_url": "https://www.expedia.com/Kihei-Hotels-Mana-Kai-Maui.h27810.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
         },
         "high": {
-          "dates": "Nov hotel \u00b7 peakish flight",
-          "flight_usd": 1280,
-          "flight_note": "Peakish (~Oct $1,278 snap)",
-          "hotel_usd": 6666,
-          "hotel_note": "Andaz Maui OV \u00b7 Expedia live",
+          "dates": "Jan 19\u201326 2027",
+          "flight_usd": 541,
+          "flight_note": "Same cheap week (or peakish ~$1k)",
+          "hotel_usd": 7633,
+          "hotel_note": "Andaz Maui resort view \u00b7 Expedia live",
           "other_usd": 2400,
           "other_note": "Richer activities + meals (default high band)",
-          "all_in_usd": 10346,
-          "stay_example": "Andaz Maui at Wailea \u00b7 ocean view",
-          "stay_url": "https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "all_in_usd": 10574,
+          "stay_example": "Andaz Maui at Wailea \u00b7 resort view",
+          "stay_url": "https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
         }
       }
     },
@@ -66,40 +66,40 @@
       "code": "HNL",
       "tiers": {
         "low": {
-          "dates": "Nov 10\u201317 2026",
-          "flight_usd": 426,
-          "flight_note": "CP est. $415+$11 (seats not held)",
-          "hotel_usd": 1655,
-          "hotel_note": "Hyatt Place Waikiki \u00b7 Expedia live",
+          "dates": "Jan 19\u201326 2027",
+          "flight_usd": 801,
+          "flight_note": "Cash proxy \u00b7 Mar HNL nonstop $801 (Jan not re-scraped)",
+          "hotel_usd": 1859,
+          "hotel_note": "Hyatt Place Waikiki \u00b7 Expedia live Jan",
           "other_usd": 1340,
           "other_note": "Dot HNL Nov other $1,340 (lean)",
-          "all_in_usd": 3421,
+          "all_in_usd": 4000,
           "stay_example": "Hyatt Place Waikiki \u00b7 city view + breakfast",
-          "stay_url": "https://www.expedia.com/Honolulu-Hotels-Hyatt-Place-Waikiki-Beach.h2766.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "stay_url": "https://www.expedia.com/Honolulu-Hotels-Hyatt-Place-Waikiki-Beach.h2766.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
         },
         "base": {
-          "dates": "Nov 10\u201317 2026",
-          "flight_usd": 739,
-          "flight_note": "Cash 2-pax RT",
-          "hotel_usd": 2608,
-          "hotel_note": "OUTRIGGER Reef Waikiki Beach \u00b7 Expedia live",
+          "dates": "Jan 19\u201326 2027",
+          "flight_usd": 801,
+          "flight_note": "Cash proxy Mar HNL $801",
+          "hotel_usd": 3052,
+          "hotel_note": "OUTRIGGER Reef \u00b7 Expedia live Jan (NR rate)",
           "other_usd": 1800,
           "other_note": "Dot HNL Nov other $1,340",
-          "all_in_usd": 5147,
+          "all_in_usd": 5653,
           "stay_example": "OUTRIGGER Reef Waikiki Beach Resort",
-          "stay_url": "https://www.expedia.com/Honolulu-Hotels-OUTRIGGER-Reef-Waikiki-Beach-Resort.h23249.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "stay_url": "https://www.expedia.com/Honolulu-Hotels-OUTRIGGER-Reef-Waikiki-Beach-Resort.h23249.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
         },
         "high": {
-          "dates": "Nov \u00b7 peakish est.",
-          "flight_usd": 960,
-          "flight_note": "Est. ~1.3\u00d7 cash",
-          "hotel_usd": 6849,
-          "hotel_note": "Halekulani \u00b7 Expedia live",
+          "dates": "Jan 19\u201326 2027",
+          "flight_usd": 1009,
+          "flight_note": "Apr\u2013Jul HNL plateau ~$1,009",
+          "hotel_usd": 3318,
+          "hotel_note": "Sheraton Waikiki (Halekulani sold out Jan) \u00b7 similar-props list",
           "other_usd": 2400,
           "other_note": "Richer activities + meals",
-          "all_in_usd": 10209,
-          "stay_example": "Halekulani \u00b7 Waikiki",
-          "stay_url": "https://www.expedia.com/Honolulu-Hotels-Halekulani.h20136.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "all_in_usd": 6727,
+          "stay_example": "Sheraton Waikiki Beach Resort (Halekulani N/A)",
+          "stay_url": "https://www.expedia.com/Honolulu-Hotels-Sheraton-Waikiki.h10159.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
         }
       }
     },
@@ -108,40 +108,40 @@
       "code": "KOA",
       "tiers": {
         "low": {
-          "dates": "Nov 2026 (CP)",
-          "flight_usd": 522,
-          "flight_note": "CP est. $511+$11 (seats not held)",
-          "hotel_usd": 2075,
-          "hotel_note": "Courtyard Kona \u00b7 resort view \u00b7 Expedia live",
+          "dates": "Mar 2\u20139 2027",
+          "flight_usd": 913,
+          "flight_note": "Cash 2-pax RT \u00b7 SFO Alaska",
+          "hotel_usd": 2275,
+          "hotel_note": "Courtyard Kona resort view \u00b7 Expedia live Mar",
           "other_usd": 1400,
           "other_note": "Lean default low band (Dot Kona other is richer \u2014 reserved for Base)",
-          "all_in_usd": 3997,
+          "all_in_usd": 4588,
           "stay_example": "Courtyard Kona Beach \u00b7 resort view",
-          "stay_url": "https://www.expedia.com/Kailua-Kona-Hotels-Courtyard-By-Marriott-King-Kamehamehas-Kona-Beach-Hotel.h21741.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "stay_url": "https://www.expedia.com/Kailua-Kona-Hotels-Courtyard-By-Marriott-King-Kamehamehas-Kona-Beach-Hotel.h21741.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2"
         },
         "base": {
-          "dates": "Mar 2\u20139 2027 flights \u00b7 hotel Nov Expedia",
+          "dates": "Mar 2\u20139 2027",
           "flight_usd": 913,
-          "flight_note": "Cash cheapest improved week",
-          "hotel_usd": 2516,
-          "hotel_note": "Outrigger Kona Resort & Spa \u00b7 Expedia live",
+          "flight_note": "Cash 2-pax RT",
+          "hotel_usd": 2691,
+          "hotel_note": "Outrigger Kona \u00b7 Expedia live Mar (~ from discount math)",
           "other_usd": 2178,
           "other_note": "Dot Kona Nov other $2,178",
-          "all_in_usd": 5607,
+          "all_in_usd": 5782,
           "stay_example": "Outrigger Kona Resort and Spa",
-          "stay_url": "https://www.expedia.com/Kailua-Kona-Hotels-Outrigger-Kona-Resort-And-Spa.h49175916.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "stay_url": "https://www.expedia.com/Kailua-Kona-Hotels-Outrigger-Kona-Resort-And-Spa.h49175916.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2"
         },
         "high": {
-          "dates": "Nov cash + Kohala resort",
-          "flight_usd": 1033,
-          "flight_note": "Prior Nov cash ~$1,033",
-          "hotel_usd": 8450,
-          "hotel_note": "Fairmont Orchid \u00b7 Expedia live",
+          "dates": "Mar 2\u20139 2027",
+          "flight_usd": 913,
+          "flight_note": "Same Mar week",
+          "hotel_usd": 5091,
+          "hotel_note": "Fairmont Orchid garden view \u00b7 Expedia live Mar",
           "other_usd": 2400,
           "other_note": "Richer activities + meals",
-          "all_in_usd": 11883,
+          "all_in_usd": 8404,
           "stay_example": "Fairmont Orchid, Kohala Coast",
-          "stay_url": "https://www.expedia.com/Kamuela-Hotels-Fairmont-Orchid.h25190.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "stay_url": "https://www.expedia.com/Kamuela-Hotels-Fairmont-Orchid.h25190.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2"
         }
       }
     },
@@ -150,42 +150,46 @@
       "code": "LIH",
       "tiers": {
         "low": {
-          "dates": "~Nov 12\u201319 2026",
-          "flight_usd": 336,
-          "flight_note": "CP est. $325+$11 (seats not held)",
-          "hotel_usd": 2335,
-          "hotel_note": "Kauai Shores garden \u00b7 Expedia live",
+          "dates": "Mar 2\u20139 2027",
+          "flight_usd": 721,
+          "flight_note": "Cash 2-pax RT \u00b7 SFO United \u00b7 Mar\u2013Jul island winner",
+          "hotel_usd": 2559,
+          "hotel_note": "Kauai Shores \u00b7 Expedia live Mar",
           "other_usd": 1400,
           "other_note": "Lean default low band",
-          "all_in_usd": 4071,
-          "stay_example": "Kauai Shores \u00b7 garden view",
-          "stay_url": "https://www.expedia.com/Kapaa-Hotels-Kauai-Shores-Hotel.h9733.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "all_in_usd": 4680,
+          "stay_example": "Kauai Shores \u00b7 renovated standard",
+          "stay_url": "https://www.expedia.com/Kapaa-Hotels-Kauai-Shores-Hotel.h9733.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2"
         },
         "base": {
-          "dates": "~Nov 12\u201319 2026",
+          "dates": "Mar 2\u20139 2027",
           "flight_usd": 721,
           "flight_note": "Cash 2-pax RT",
-          "hotel_usd": 3050,
-          "hotel_note": "Sheraton Kauai Resort Villas \u00b7 Expedia live",
+          "hotel_usd": 3382,
+          "hotel_note": "Sheraton Kauai Resort Villas \u00b7 Expedia live Mar",
           "other_usd": 2306,
           "other_note": "Dot Kauai Nov other $2,306",
-          "all_in_usd": 6077,
+          "all_in_usd": 6409,
           "stay_example": "Sheraton Kauai Resort Villas \u00b7 Poipu",
-          "stay_url": "https://www.expedia.com/Koloa-Hotels-Sheraton-Kauai-Resort-Villas.h41815407.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "stay_url": "https://www.expedia.com/Koloa-Hotels-Sheraton-Kauai-Resort-Villas.h41815407.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2"
         },
         "high": {
-          "dates": "Nov \u00b7 peakish est.",
-          "flight_usd": 940,
-          "flight_note": "Est. ~1.3\u00d7 cash",
-          "hotel_usd": 3978,
-          "hotel_note": "Koloa Landing Autograph \u00b7 Expedia live (GH Kauai not listed)",
+          "dates": "Mar 2\u20139 2027",
+          "flight_usd": 1009,
+          "flight_note": "Apr\u2013Jul LIH plateau ~$1,009",
+          "hotel_usd": 4512,
+          "hotel_note": "Koloa Landing \u00b7 Expedia live Mar",
           "other_usd": 2400,
           "other_note": "Richer activities + meals",
-          "all_in_usd": 7318,
+          "all_in_usd": 7921,
           "stay_example": "Koloa Landing Resort at Poipu",
-          "stay_url": "https://www.expedia.com/Koloa-Hotels-Koloa-Landing-Resort-At-Poipu.h3812333.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+          "stay_url": "https://www.expedia.com/Koloa-Hotels-Koloa-Landing-Resort-At-Poipu.h3812333.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2"
         }
       }
     }
-  ]
+  ],
+  "primary_windows": {
+    "Maui_Oahu": "2027-01-19/26",
+    "KOA_LIH": "2027-03-02/09"
+  }
 }

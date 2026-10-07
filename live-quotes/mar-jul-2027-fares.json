@@ -1,0 +1,219 @@
+{
+  "as_of": "2026-10-07 PT",
+  "method": "Google Flights nonstop RT 2 adults, every ~2 weeks Mar\u2013Jul + Jan/Feb Maui confirm; default results list (no View more)",
+  "scan": "2027-01 through 2027-07",
+  "cheapest_2027_overall": {
+    "island": "Maui",
+    "route": "SFO-OGG",
+    "week": "2027-01-19/26",
+    "price": 541,
+    "tie": "2027-02-02/09"
+  },
+  "cheapest_mar_jul_by_island": {
+    "Maui": {
+      "week": "2027-03-02/09",
+      "price": 727,
+      "airline": "United"
+    },
+    "Oahu": {
+      "week": "2027-03-02/09",
+      "price": 801,
+      "airline": "Alaska/Hawaiian"
+    },
+    "Big Island": {
+      "week": "2027-03-02/09",
+      "price": 913,
+      "airline": "Alaska"
+    },
+    "Kauai": {
+      "week": "2027-03-02/09",
+      "price": 721,
+      "airline": "United"
+    }
+  },
+  "maui_sfo_ogg": [
+    {
+      "depart": "2027-01-19",
+      "ret": "2027-01-26",
+      "nonstop": 541,
+      "airline": "United"
+    },
+    {
+      "depart": "2027-02-02",
+      "ret": "2027-02-09",
+      "nonstop": 541,
+      "airline": "United"
+    },
+    {
+      "depart": "2027-03-02",
+      "ret": "2027-03-09",
+      "nonstop": 727,
+      "airline": "United"
+    },
+    {
+      "depart": "2027-03-16",
+      "ret": "2027-03-23",
+      "nonstop": 1009,
+      "airline": "Alaska/Hawaiian"
+    },
+    {
+      "depart": "2027-03-30",
+      "ret": "2027-04-06",
+      "nonstop": 1085,
+      "airline": "United",
+      "one_stop": 1048
+    },
+    {
+      "depart": "2027-04-13",
+      "ret": "2027-04-20",
+      "nonstop": 1009,
+      "airline": "Alaska/Hawaiian"
+    },
+    {
+      "depart": "2027-04-17",
+      "ret": "2027-04-24",
+      "nonstop": 1063,
+      "airline": "United"
+    },
+    {
+      "depart": "2027-04-27",
+      "ret": "2027-05-04",
+      "nonstop": 1009,
+      "airline": "Alaska/Hawaiian"
+    },
+    {
+      "depart": "2027-05-11",
+      "ret": "2027-05-18",
+      "nonstop": 1009,
+      "airline": "Alaska/Hawaiian"
+    },
+    {
+      "depart": "2027-05-25",
+      "ret": "2027-06-01",
+      "nonstop": 1009,
+      "airline": "Alaska/Hawaiian"
+    },
+    {
+      "depart": "2027-06-08",
+      "ret": "2027-06-15",
+      "nonstop": 1059,
+      "airline": "United",
+      "one_stop": 1028
+    },
+    {
+      "depart": "2027-06-22",
+      "ret": "2027-06-29",
+      "nonstop": 1009,
+      "airline": "United"
+    },
+    {
+      "depart": "2027-07-06",
+      "ret": "2027-07-13",
+      "nonstop": 1009,
+      "airline": "United"
+    },
+    {
+      "depart": "2027-07-20",
+      "ret": "2027-07-27",
+      "nonstop": 1009,
+      "airline": "United"
+    }
+  ],
+  "other_islands": [
+    {
+      "route": "SFO-HNL",
+      "depart": "2027-03-02",
+      "ret": "2027-03-09",
+      "nonstop": 801,
+      "one_stop": 741
+    },
+    {
+      "route": "SFO-KOA",
+      "depart": "2027-03-02",
+      "ret": "2027-03-09",
+      "nonstop": 913,
+      "one_stop": 829
+    },
+    {
+      "route": "SFO-LIH",
+      "depart": "2027-03-02",
+      "ret": "2027-03-09",
+      "nonstop": 721
+    },
+    {
+      "route": "SFO-HNL",
+      "depart": "2027-04-13",
+      "ret": "2027-04-20",
+      "nonstop": 1009
+    },
+    {
+      "route": "SFO-KOA",
+      "depart": "2027-04-13",
+      "ret": "2027-04-20",
+      "nonstop": 1039
+    },
+    {
+      "route": "SFO-LIH",
+      "depart": "2027-04-13",
+      "ret": "2027-04-20",
+      "nonstop": 1009
+    },
+    {
+      "route": "SFO-HNL",
+      "depart": "2027-05-11",
+      "ret": "2027-05-18",
+      "nonstop": 1009
+    },
+    {
+      "route": "SFO-KOA",
+      "depart": "2027-05-11",
+      "ret": "2027-05-18",
+      "nonstop": 1039
+    },
+    {
+      "route": "SFO-LIH",
+      "depart": "2027-05-11",
+      "ret": "2027-05-18",
+      "nonstop": 1009
+    },
+    {
+      "route": "SFO-HNL",
+      "depart": "2027-06-08",
+      "ret": "2027-06-15",
+      "nonstop": 1160,
+      "one_stop": 1029
+    },
+    {
+      "route": "SFO-KOA",
+      "depart": "2027-06-08",
+      "ret": "2027-06-15",
+      "nonstop": 1172
+    },
+    {
+      "route": "SFO-LIH",
+      "depart": "2027-06-08",
+      "ret": "2027-06-15",
+      "nonstop": 1069,
+      "one_stop": 1048
+    },
+    {
+      "route": "SFO-HNL",
+      "depart": "2027-07-06",
+      "ret": "2027-07-13",
+      "nonstop": 1009
+    },
+    {
+      "route": "SFO-KOA",
+      "depart": "2027-07-06",
+      "ret": "2027-07-13",
+      "nonstop": 1172
+    },
+    {
+      "route": "SFO-LIH",
+      "depart": "2027-07-06",
+      "ret": "2027-07-13",
+      "nonstop": 1009
+    }
+  ],
+  "budget_note": "FCF ~$5.4k after BBP. Jan/Feb Maui $541 Low still roomiest. Mar Maui $727 still fits Low. Apr\u2013Jul ~$1,009 flights leave little cushion. No Mar\u2013Jul week beats Jan $541."
+}

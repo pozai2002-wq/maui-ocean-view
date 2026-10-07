@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-10-07 PT",
+  "source": "Expedia live detail pages",
+  "weeks": {
+    "2027-01-19/26": [
+      {
+        "tier": "low",
+        "island": "Maui",
+        "name": "Kihei Akahi #C-520",
+        "total": 2784,
+        "nightly": 340
+      },
+      {
+        "tier": "base",
+        "island": "Maui",
+        "name": "Mana Kai Maui 2BR",
+        "total": 5347,
+        "nightly": 643,
+        "note": "1BR sold out"
+      },
+      {
+        "tier": "high",
+        "island": "Maui",
+        "name": "Andaz Maui resort view",
+        "total": 7633,
+        "nightly": 919
+      },
+      {
+        "tier": "low",
+        "island": "Oahu",
+        "name": "Hyatt Place Waikiki",
+        "total": 1859,
+        "nightly": 224
+      },
+      {
+        "tier": "base",
+        "island": "Oahu",
+        "name": "OUTRIGGER Reef",
+        "total": 3052,
+        "nightly": 367
+      },
+      {
+        "tier": "high",
+        "island": "Oahu",
+        "name": "Sheraton Waikiki (Halekulani N/A)",
+        "total": 3318,
+        "nightly": 399
+      }
+    ],
+    "2027-03-02/09": [
+      {
+        "tier": "low",
+        "island": "Maui",
+        "name": "Kihei Akahi #C-520",
+        "total": 2682,
+        "nightly": 327
+      },
+      {
+        "tier": "low",
+        "island": "Big Island",
+        "name": "Courtyard Kona",
+        "total": 2275,
+        "nightly": 274
+      },
+      {
+        "tier": "base",
+        "island": "Big Island",
+        "name": "Outrigger Kona",
+        "total": 2691,
+        "nightly": 324
+      },
+      {
+        "tier": "high",
+        "island": "Big Island",
+        "name": "Fairmont Orchid",
+        "total": 5091,
+        "nightly": 613
+      },
+      {
+        "tier": "low",
+        "island": "Kauai",
+        "name": "Kauai Shores",
+        "total": 2559,
+        "nightly": 308
+      },
+      {
+        "tier": "base",
+        "island": "Kauai",
+        "name": "Sheraton Kauai Resort Villas",
+        "total": 3382,
+        "nightly": 407
+      },
+      {
+        "tier": "high",
+        "island": "Kauai",
+        "name": "Koloa Landing",
+        "total": 4512,
+        "nightly": 543
+      }
+    ]
+  },
+  "all_in_low_2027": {
+    "Maui Jan": 4725,
+    "Maui Mar": 4809,
+    "Oahu Jan": 4000,
+    "Kona Mar": 4588,
+    "Kauai Mar": 4680
+  },
+  "fcf": 5400,
+  "fit": "All island Lows still fit under ~$5.4k FCF with thin cushion. Base/High do not."
+}

@@ -1,12 +1,61 @@
 {
-  "as_of": "2026-10-06 PT",
+  "as_of": "2026-10-07 PT",
   "scan_through": "2027-07",
-  "method": "spot-check Mar–Jul 2027 + prior calendar through Feb",
-  "overall_winner": {"island":"Maui","price":541,"dates":"2026-11-10/17"},
-  "by_island": [
-    {"island":"Maui","code":"OGG","price":541,"week":"2026-11-10/17"},
-    {"island":"Kauai","code":"LIH","price":721,"week":"2026-11-12/19","tie":"2027-03-02/09"},
-    {"island":"Oahu","code":"HNL","price":739,"week":"late Oct/early Nov 2026"},
-    {"island":"Big Island","code":"KOA","price":913,"week":"2027-03-02/09","origin":"SFO","prior":1033}
+  "method": "Full Mar\u2013Jul ~biweekly Google Flights nonstop + Jan/Feb Maui confirm",
+  "overall_winner_2027": {
+    "island": "Maui",
+    "price": 541,
+    "dates": "2027-01-19/26",
+    "tie": "2027-02-02/09"
+  },
+  "mar_jul_winners": {
+    "Maui": {
+      "week": "2027-03-02/09",
+      "price": 727,
+      "airline": "United"
+    },
+    "Oahu": {
+      "week": "2027-03-02/09",
+      "price": 801,
+      "airline": "Alaska/Hawaiian"
+    },
+    "Big Island": {
+      "week": "2027-03-02/09",
+      "price": 913,
+      "airline": "Alaska"
+    },
+    "Kauai": {
+      "week": "2027-03-02/09",
+      "price": 721,
+      "airline": "United"
+    }
+  },
+  "by_island_2027": [
+    {
+      "island": "Maui",
+      "code": "OGG",
+      "best_2027": 541,
+      "week": "2027-01-19/26",
+      "mar_jul_best": 727,
+      "mar_jul_week": "2027-03-02/09"
+    },
+    {
+      "island": "Kauai",
+      "code": "LIH",
+      "best_mar_jul": 721,
+      "week": "2027-03-02/09"
+    },
+    {
+      "island": "Oahu",
+      "code": "HNL",
+      "best_mar_jul": 801,
+      "week": "2027-03-02/09"
+    },
+    {
+      "island": "Big Island",
+      "code": "KOA",
+      "best_mar_jul": 913,
+      "week": "2027-03-02/09"
+    }
   ]
 }
