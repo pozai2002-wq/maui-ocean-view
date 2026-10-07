@@ -1,0 +1,31 @@
+{
+  "wailea_searches": [
+    {
+      "checkin": "2027-04-17",
+      "checkout": "2027-04-24",
+      "url": "https://www.expedia.com/Hotel-Search?destination=Wailea%2C+Maui%2C+Hawaii%2C+United+States+of+America&startDate=2027-04-17&endDate=2027-04-24&adults=2&rooms=1&sort=RECOMMENDED&room_views_group=ocean_room_view"
+    },
+    {
+      "checkin": "2027-05-01",
+      "checkout": "2027-05-08",
+      "url": "https://www.expedia.com/Hotel-Search?destination=Wailea%2C+Maui%2C+Hawaii%2C+United+States+of+America&startDate=2027-05-01&endDate=2027-05-08&adults=2&rooms=1&sort=RECOMMENDED&room_views_group=ocean_room_view"
+    },
+    {
+      "checkin": "2026-10-17",
+      "checkout": "2026-10-24",
+      "url": "https://www.expedia.com/Hotel-Search?destination=Wailea%2C+Maui%2C+Hawaii%2C+United+States+of+America&startDate=2026-10-17&endDate=2026-10-24&adults=2&rooms=1&sort=RECOMMENDED&room_views_group=ocean_room_view"
+    }
+  ],
+  "property_pages": {
+    "andaz": "https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information",
+    "fairmont": "https://www.expedia.com/Kihei-Hotels-Fairmont-Kea-Lani-Maui.h8765.Hotel-Information",
+    "hotel_wailea": "https://www.expedia.com/Hotel-Search?selected=Hotel-Wailea",
+    "fourseasons": "https://www.expedia.com/Kihei-Hotels-Four-Seasons-Resort-Maui-At-Wailea.h14336.Hotel-Information"
+  },
+  "amex_fhr": {
+    "andaz": "https://www.americanexpress.com/en-us/travel/discover/property/Andaz-Maui-At-Wailea-Resort",
+    "fairmont": "https://www.americanexpress.com/en-us/travel/discover/property/Hawaii-US/Wailea/fairmont-kea-lani-maui",
+    "fourseasons": "https://www.americanexpress.com/en-us/travel/discover/property/four-seasons-resort-maui-at-wailea",
+    "grand_wailea": "https://www.americanexpress.com/en-us/travel/discover/property/Hawaii-US/Wailea/Grand-Wailea-A-Waldorf-Astoria-Resort"
+  }
+}

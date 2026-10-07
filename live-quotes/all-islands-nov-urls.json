@@ -1,0 +1,42 @@
+[
+  {
+    "o": "SFO",
+    "d": "OGG",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NGT3IHCAESA09HRxoeEgoyMDI2LTExLTE3agcIARIDT0dHcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "o": "SFO",
+    "d": "HNL",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NGT3IHCAESA0hOTBoeEgoyMDI2LTExLTE3agcIARIDSE5McgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "o": "SFO",
+    "d": "KOA",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NGT3IHCAESA0tPQRoeEgoyMDI2LTExLTE3agcIARIDS09BcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "o": "SFO",
+    "d": "LIH",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NGT3IHCAESA0xJSBoeEgoyMDI2LTExLTE3agcIARIDTElIcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "o": "SJC",
+    "d": "OGG",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NKQ3IHCAESA09HRxoeEgoyMDI2LTExLTE3agcIARIDT0dHcgcIARIDU0pDQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "o": "SJC",
+    "d": "HNL",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NKQ3IHCAESA0hOTBoeEgoyMDI2LTExLTE3agcIARIDSE5McgcIARIDU0pDQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "o": "SJC",
+    "d": "KOA",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NKQ3IHCAESA0tPQRoeEgoyMDI2LTExLTE3agcIARIDS09BcgcIARIDU0pDQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "o": "SJC",
+    "d": "LIH",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NKQ3IHCAESA0xJSBoeEgoyMDI2LTExLTE3agcIARIDTElIcgcIARIDU0pDQAJIAZgBAQ&curr=USD&hl=en"
+  }
+]

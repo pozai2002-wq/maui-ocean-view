@@ -1,0 +1,17 @@
+{
+  "route": "SFO-OGG",
+  "depart": "2027-05-08",
+  "return": "2027-05-15",
+  "pax": 2,
+  "filter": "nonstop",
+  "source": "Google Flights",
+  "currency": "USD",
+  "prices_include_taxes": true,
+  "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI3LTA1LTA4KABqBwgBEgNTRk9yBwgBEgNPR0caIBIKMjAyNy0wNS0xNSgAagcIARIDT0dHcgcIARIDU0ZPQAFAAkgBcAGCAQsI____________AZgBAQ&tfu=EgYIABAAGAA&hl=en&curr=USD",
+  "options": [
+    {"depart":"4:25 PM","arrive":"6:55 PM","airline":"United","duration":"5 hr 30 min","price":1238},
+    {"depart":"8:10 AM","arrive":"10:40 AM","airline":"United","duration":"5 hr 30 min","price":1266},
+    {"depart":"7:10 AM","arrive":"9:35 AM","airline":"Alaska/Hawaiian","duration":"5 hr 25 min","price":1277},
+    {"depart":"10:05 AM","arrive":"12:30 PM","airline":"United","duration":"5 hr 25 min","price":1544}
+  ]
+}

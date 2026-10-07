@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hawaii · Ocean View — Leo’s Island Plan</title>
+  <meta name="description" content="Interactive Hawaii plan for a Bay Area couple: click Maui, Oahu, Big Island, or Kauai for ocean-view hotels, chill guided activities, nonstop flights, and Leo’s loyalty stack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-selected-island="maui">
+  <a class="skip-link" href="#island-map">Skip to island map</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Maui <span>·</span> Ocean View</a>
+      <ul class="nav-links">
+        <li><a href="#island-map">Islands</a></li>
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#live-quotes">Live quotes</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#perks">Perks</a></li>
+        <li><a href="#budget">Budget</a></li>
+        <li><a href="#practical">Practical</a></li>
+        <li><a href="#next">Next</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <p class="hero-eyebrow">Leo + girlfriend · Bay Area · Nonstop only</p>
+      <h1><span id="hero-island-name">Maui</span> <em>·</em> Ocean View</h1>
+      <p class="hero-pitch" id="hero-pitch">
+        Seven nights in Wailea’s beachfront luxury strip — true ocean-view rooms,
+        nonstop SFO–OGG, and Leo’s Hyatt + Amex FHR stack doing the heavy lifting.
+      </p>
+      <div class="hero-picks">
+        <span class="pill primary">Primary · Nov 10–17, 2026 · ~$541 flights</span>
+        <span class="pill value">Alt · May 1–8, 2027 (weather) · Kauai/Oahu/KOA options too</span>
+      </div>
+      <p class="hero-meta">Research &amp; snapshots as of Oct 6, 2026 PT · Verify live before booking</p>
+      <p class="hero-cta"><a href="#island-map">Click an island below</a> to explore Maui, Oahu, Big Island, or Kauai.</p>
+    </div>
+  </header>
+
+  <!-- Interactive island map -->
+  <section id="island-map" class="island-map-section section-alt">
+    <div class="wrap">
+      <p class="section-label">Explore</p>
+      <h2>Pick your island</h2>
+      <p class="lede">
+        Click or tap an island (keyboard: Tab, then Enter/Space). Maui starts selected as the recommended pick.
+        Flights, ocean-view hotels, and chill guided activities update below — no page reload.
+      </p>
+
+      <div class="map-layout">
+        <div class="map-stage" role="group" aria-label="Hawaiian islands map">
+          <svg class="hawaii-svg" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="false">
+            <title>Major Hawaiian islands</title>
+            <defs>
+              <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0a3d3f"/>
+                <stop offset="55%" stop-color="#136f73"/>
+                <stop offset="100%" stop-color="#1a8a8f"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Ocean background -->
+            <rect x="0" y="0" width="640" height="420" rx="20" fill="url(#oceanGrad)"/>
+            <circle cx="80" cy="60" r="2" fill="rgba(245,239,230,0.25)"/>
+            <circle cx="520" cy="90" r="1.5" fill="rgba(245,239,230,0.2)"/>
+            <circle cx="200" cy="340" r="2" fill="rgba(245,239,230,0.18)"/>
+            <circle cx="580" cy="300" r="1.5" fill="rgba(245,239,230,0.22)"/>
+
+            <!-- Kauai (NW) -->
+            <g class="island-shape" data-island-shape="kauai" role="button" tabindex="0"
+               aria-label="Kauai, Lihue airport" aria-pressed="false">
+              <path d="M78 118c18-22 48-28 68-14 16 12 18 38 6 54-14 18-42 24-62 12-16-10-22-34-12-52z" />
+              <text class="island-label" x="95" y="148">Kauai</text>
+              <text class="island-code" x="95" y="164">LIH</text>
+            </g>
+
+            <!-- Oahu -->
+            <g class="island-shape" data-island-shape="oahu" role="button" tabindex="0"
+               aria-label="Oahu, Honolulu airport" aria-pressed="false">
+              <path d="M198 148c22-14 52-12 68 6 12 14 10 36-4 48-18 16-48 14-66-4-14-14-12-36 2-50z" />
+              <text class="island-label" x="212" y="178">Oahu</text>
+              <text class="island-code" x="212" y="194">HNL</text>
+            </g>
+
+            <!-- Molokai (dimmed) -->
+            <g class="island-shape is-disabled" data-island-disabled="molokai" role="button" tabindex="0"
+               aria-label="Molokai — not recommended for this brief" aria-disabled="true">
+              <path d="M292 168c28-8 58-4 72 10 8 8 4 22-8 28-22 10-52 6-70-6-10-8-8-24 6-32z" />
+              <text class="island-label dim" x="308" y="190">Molokai</text>
+            </g>
+
+            <!-- Lanai (dimmed) -->
+            <g class="island-shape is-disabled" data-island-disabled="lanai" role="button" tabindex="0"
+               aria-label="Lanai — not recommended for this brief" aria-disabled="true">
+              <path d="M318 218c14-12 34-12 44 2 8 12 2 28-12 34-14 6-32 2-40-10-6-10-2-18 8-26z" />
+              <text class="island-label dim" x="322" y="242">Lanai</text>
+            </g>
+
+            <!-- Maui (recommended, default selected) -->
+            <g class="island-shape is-selected" data-island-shape="maui" role="button" tabindex="0"
+               aria-label="Maui, Kahului airport, recommended" aria-pressed="true">
+              <path d="M368 188c36-28 88-22 108 12 14 24 8 58-18 74-32 20-78 12-102-16-22-26-14-48 12-70z" filter="url(#softGlow)" />
+              <text class="island-label" x="398" y="228">Maui</text>
+              <text class="island-code" x="398" y="244">OGG</text>
+              <text class="rec-svg-badge" x="398" y="262">★ Recommended</text>
+            </g>
+
+            <!-- Big Island / Hawaiʻi (SE, largest) -->
+            <g class="island-shape" data-island-shape="bigisland" role="button" tabindex="0"
+               aria-label="Big Island, Kona airport" aria-pressed="false">
+              <path d="M468 268c48-36 118-28 148 28 22 42 8 98-42 122-52 26-118 8-148-42-28-48-8-82 42-108z" />
+              <text class="island-label" x="510" y="328">Big Island</text>
+              <text class="island-code" x="510" y="346">KOA</text>
+            </g>
+          </svg>
+          <p class="map-hint">Dimmed islands (Molokai, Lanai) are not recommended for this brief — tap for why.</p>
+        </div>
+
+        <div class="island-chips" role="group" aria-label="Select island">
+          <button type="button" class="island-chip is-selected" data-island-select="maui" aria-pressed="true">
+            <span class="chip-name">Maui</span>
+            <span class="chip-meta">OGG · Recommended</span>
+          </button>
+          <button type="button" class="island-chip" data-island-select="oahu" aria-pressed="false">
+            <span class="chip-name">Oahu</span>
+            <span class="chip-meta">HNL · Strongest flights</span>
+          </button>
+          <button type="button" class="island-chip" data-island-select="bigisland" aria-pressed="false">
+            <span class="chip-name">Big Island</span>
+            <span class="chip-meta">KOA · Seclusion</span>
+          </button>
+          <button type="button" class="island-chip" data-island-select="kauai" aria-pressed="false">
+            <span class="chip-name">Kauai</span>
+            <span class="chip-meta">LIH · Quieter</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="sr-only" id="island-live" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- Dynamic island content (pitch + flights + hotels) -->
+  <section id="island-panel" class="island-panel-section" aria-labelledby="island-panel-title" tabindex="-1">
+    <!-- Populated by app.js; Maui seed for first paint -->
+
+    <div class="wrap island-panel-inner" data-active-island="maui">
+      <div class="island-panel-head">
+        <span class="rec-badge">Recommended</span>
+        <p class="section-label">Recommended · Couples ocean-view</p>
+        <h2 id="island-panel-title">Maui / Wailea <span class="airport-code">OGG</span></h2>
+        <p class="lede">Best density of beachfront luxury with marketable Ocean View categories, calm swimming beaches, and a walkable resort strip — plus nonstops from both SFO and SJC. Loading interactive details…</p>
+      </div>
+      <div class="island-hotels-block" id="hotels">
+        <p class="section-label">Stay</p>
+        <h3>Ocean-view hotels — Maui / Wailea</h3>
+        <p class="lede">Select Maui on the map (already selected) — hotel cards load with the interactive script.</p>
+      </div>
+    </div>
+
+    <noscript>
+      <div class="wrap">
+        <p class="section-label">Recommended · Couples ocean-view</p>
+        <h2>Maui / Wailea <span class="airport-code">OGG</span></h2>
+        <p class="lede">Enable JavaScript to switch islands. Maui content is also in the Hotels section of the static build.</p>
+      </div>
+    </noscript>
+  </section>
+
+  <!-- Date windows (global) -->
+  <section id="dates" class="section-alt">
+    <div class="wrap">
+      <p class="section-label">Calendar</p>
+      <h2>Date windows</h2>
+      <p class="lede">Proposed 7-night Sat–Sat trips clear of known blocks. Late Apr–May is the best overall weather/crowd/price balance for Maui (primary). Same windows work as planning anchors for other islands — re-check fares per airport.</p>
+
+      <p style="font-size:0.85rem;font-weight:600;color:var(--muted);margin-bottom:0.5rem;">Blocked — do not book</p>
+      <div class="blocked-list" aria-label="Blocked dates">
+        <span class="chip">Nov 27–Dec 2 2026 · Long Beach</span>
+        <span class="chip">Dec 11–13 2026 · Phoenix</span>
+        <span class="chip">Dec 30 2026–Jan 3 2027 · Chicago</span>
+        <span class="chip">All of Sep 2027 · Taiwan/Japan</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Window</th>
+              <th>Pattern</th>
+              <th>Flight snapshot (2 pax RT · SFO–OGG)</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nov 10–17, 2026 <span class="badge badge-primary">Primary · cheapest</span></td>
+              <td>Tue–Tue</td>
+              <td>~$541 RT (2 pax)</td>
+              <td>Soft shoulder before Thanksgiving; chill guided week</td>
+            </tr>
+
+            <tr>
+              <td>Oct 17–24, 2026</td>
+              <td>Sat–Sat</td>
+              <td>~$1,278 · Alaska/Hawaiian</td>
+              <td>Fall shoulder; before Thanksgiving block</td>
+            </tr>
+            <tr class="highlight">
+              <td>Apr 17–24, 2027 <span class="badge badge-best">Cheapest</span></td>
+              <td>Sat–Sat</td>
+              <td><strong>~$1,069</strong> · United</td>
+              <td>Spring shoulder value pick; Maui hotel Expedia totals on island panel</td>
+            </tr>
+            <tr class="highlight">
+              <td>May 1–8, 2027 <span class="badge">Weather alt</span></td>
+              <td>Sat–Sat</td>
+              <td>~Nearby May 8–15 ~$1,238</td>
+              <td>Top weather/crowd/price; clear of all blocks</td>
+            </tr>
+            <tr>
+              <td>May 8–15, 2027</td>
+              <td>Sat–Sat</td>
+              <td>~$1,238 · United</td>
+              <td>Adjacent to primary; live Google Flights scrape</td>
+            </tr>
+            <tr>
+              <td>Oct 2–9, 2027</td>
+              <td>Sat–Sat</td>
+              <td>Not scraped yet</td>
+              <td>After Sep Asia buffer; classic fall value</td>
+            </tr>
+            <tr class="blocked">
+              <td>Sep 2027 <span class="badge badge-blocked">Blocked</span></td>
+              <td>—</td>
+              <td>—</td>
+              <td>Taiwan / Japan trip</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="snapshot-note">
+        Maui (OGG) flight prices from Google Flights nonstop SFO–OGG scrapes saved Oct 6, 2026 PT.
+        Re-check before booking. Bags extra. Other islands: pull live SFO/SJC nonstops for that airport.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Live quotes · Nov 10–17 2026 -->
+  <section id="live-quotes" class="live-quotes-section">
+    <div class="wrap">
+      <p class="section-label">Verify live</p>
+      <h2>Live quotes · Nov 10–17, 2026</h2>
+      <p class="lede">
+        Screenshot thumbnails from Google Flights, Expedia (ocean view), and operator sites —
+        click any card to open the live search. 2 adults · as of <strong>Oct 6, 2026 PT</strong>.
+        Not guarantees — re-check before booking.
+      </p>
+
+      <h3 class="quote-subhead">Flights · ~$541 RT total</h3>
+      <div class="quote-grid">
+        <a class="quote-card" href="https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NGT3IHCAESA09HRxoeEgoyMDI2LTExLTE3agcIARIDT0dHcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/flight-sfo-ogg.webp" alt="Google Flights SFO–OGG screenshot" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>SFO → OGG</strong>
+            <span class="quote-price">$541 RT · United</span>
+            <span class="quote-asof">2 adults · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+        <a class="quote-card" href="https://www.google.com/travel/flights?q=Flights%20from%20SJC%20to%20OGG%20on%202026-11-10%20through%202026-11-17%20nonstop%202%20adults&curr=USD&hl=en" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/flight-sjc-ogg.webp" alt="Google Flights SJC–OGG screenshot" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>SJC → OGG</strong>
+            <span class="quote-price">$541 RT · Alaska / Hawaiian</span>
+            <span class="quote-asof">2 adults · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+      </div>
+
+      <h3 class="quote-subhead">Hotels · Expedia ocean-view totals</h3>
+      <div class="quote-grid quote-grid-3">
+        <a class="quote-card" href="https://www.expedia.com/Hotel-Search?destination=Wailea%2C%20Maui&startDate=2026-11-10&endDate=2026-11-17&adults=2&rooms=1&room_views_group=ocean_room_view&hotelName=Andaz%20Maui" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/expedia-andaz.webp" alt="Expedia Andaz Maui ocean view" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>Andaz Maui</strong>
+            <span class="quote-price">$7,084 · OV total</span>
+            <span class="quote-asof">Nov 10–17 · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+        <a class="quote-card" href="https://www.expedia.com/Hotel-Search?destination=Wailea%2C%20Maui&startDate=2026-11-10&endDate=2026-11-17&adults=2&rooms=1&room_views_group=ocean_room_view&hotelName=Fairmont%20Kea%20Lani" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/expedia-fairmont.webp" alt="Expedia Fairmont Kea Lani ocean view" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>Fairmont Kea Lani</strong>
+            <span class="quote-price">$9,781 · OV total</span>
+            <span class="quote-asof">Nov 10–17 · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+        <a class="quote-card" href="https://www.expedia.com/Hotel-Search?destination=Wailea%2C%20Maui&startDate=2026-11-10&endDate=2026-11-17&adults=2&rooms=1&room_views_group=ocean_room_view&hotelName=Hotel%20Wailea" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/expedia-hotel-wailea.webp" alt="Expedia Hotel Wailea ocean view" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>Hotel Wailea</strong>
+            <span class="quote-price">$15,427 · OV total</span>
+            <span class="quote-asof">Nov 10–17 · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+      </div>
+      <p class="snapshot-note">
+        Also: <a href="media/expedia-wailea-ocean-list.webp" rel="noopener" target="_blank">Wailea OV list screenshot</a> (local media).
+      </p>
+
+      <h3 class="quote-subhead">Activities · operator pages</h3>
+      <div class="quote-grid quote-grid-3">
+        <a class="quote-card" href="https://kaikanani.com/our-tours/adventure-sunset-sail/" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/kaikanani-sunset-sail.webp" alt="Kai Kanani sunset sail" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>Sunset sail</strong>
+            <span class="quote-price">$199 / adult</span>
+            <span class="quote-asof">Kai Kanani · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+        <a class="quote-card" href="https://kaikanani.com/our-tours/signature-deluxe-snorkel/" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/kaikanani-signature-snorkel.webp" alt="Kai Kanani Molokini snorkel" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>Molokini snorkel</strong>
+            <span class="quote-price">$269 / adult</span>
+            <span class="quote-asof">Kai Kanani · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+        <a class="quote-card" href="https://pacwhale.com/ecotours/whale-dolphin/" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/pacwhale-whale-watch.webp" alt="Pacific Whale Foundation whale watch" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>Whale watch</strong>
+            <span class="quote-price">From ~$99</span>
+            <span class="quote-asof">PacWhale · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+        <a class="quote-card" href="https://andazmauiatwailea.com/spa-and-wellness/" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/andaz-spa.webp" alt="Andaz Maui spa" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>Andaz spa</strong>
+            <span class="quote-price">Price n/a on page</span>
+            <span class="quote-asof">Est. ~$200–400+/pp · Oct 6, 2026 PT</span>
+          </div>
+        </a>
+        <a class="quote-card" href="https://www.bluehawaiian.com/en/maui/tours/majestic-maui" rel="noopener" target="_blank">
+          <div class="quote-thumb"><img src="media/bluehawaiian-majestic-maui.webp" alt="Blue Hawaiian Majestic Maui" loading="lazy" width="640" height="400" /></div>
+          <div class="quote-caption">
+            <strong>Majestic Maui heli</strong>
+            <span class="quote-price">From $419 / pp</span>
+            <span class="quote-asof">Blue Hawaiian · as of Oct 6, 2026 PT</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="sample-total trip-snapshot">
+        <h3>Rough trip total snapshot · Andaz + core activities</h3>
+        <div class="math">
+          <div class="row"><span>Flights SFO or SJC → OGG (2 pax RT)</span><span>$541</span></div>
+          <div class="row"><span>Andaz Maui OV (Expedia)</span><span>$7,084</span></div>
+          <div class="row"><span>Sunset sail × 2 adults ($199)</span><span>$398</span></div>
+          <div class="row"><span>Molokini snorkel × 2 adults ($269)</span><span>$538</span></div>
+          <div class="row"><span>Spa estimate (2 pax · menu n/a)</span><span>~$600</span></div>
+          <div class="row total"><span>Approx. snapshot total</span><span>~$9,161</span></div>
+        </div>
+        <p style="margin-top:1rem;font-size:0.88rem;opacity:0.85;">
+          Optional add-ons not in sum: whale from ~$99, heli from $419/pp.
+          Fairmont path ≈ $541 + $9,781 + activities ≈ <strong>~$11,858</strong> before spa.
+          Snapshots as of Oct 6, 2026 PT — verify live.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perks (global) -->
+  <section id="perks">
+    <div class="wrap">
+      <p class="section-label">Leo’s stack</p>
+      <h2>Your perks stack</h2>
+      <p class="lede">Loyalty balances and card perks as of Oct 6, 2026. Use these — don’t book generic cash if FHR or Hyatt award wins. Companion Pass is strongest when Maui (SJC–OGG WN) is selected.</p>
+
+      <div class="perks-grid">
+        <article class="perk-card highlight">
+          <h3>Southwest Companion Pass</h3>
+          <p class="perk-stat">Active</p>
+          <p>Second person flies free (taxes/fees only). Prefer <strong>Southwest nonstops SJC–OGG</strong> once service is live (~Nov 21, 2026) — can cut flight cost nearly in half. Less useful for KOA/LIH nonstop constraint (no SJC nonstops).</p>
+          <p class="muted">Rapid Rewards #23060463414 · ~66k points</p>
+        </article>
+
+        <article class="perk-card hyatt">
+          <h3>World of Hyatt</h3>
+          <p class="perk-stat">136,782 <small>points · as of Sep 24, 2026</small></p>
+          <ul>
+            <li>Andaz Maui award nights if OV category available</li>
+            <li>Also Grand Hyatt Kauai / other Hyatt (check OV)</li>
+            <li>~137k can cover a meaningful chunk of a 7-night stay</li>
+          </ul>
+        </article>
+
+        <article class="perk-card amex">
+          <h3>Amex Business Platinum</h3>
+          <p class="perk-stat">FHR <small>card mask ···1005</small></p>
+          <ul>
+            <li>Daily breakfast for 2</li>
+            <li>~$100 property credit</li>
+            <li>Room upgrade when available</li>
+            <li>Noon check-in when available</li>
+            <li>Guaranteed 4pm late checkout</li>
+            <li>Also: Hotel Collection + Amex Travel + lounges</li>
+          </ul>
+        </article>
+
+        <article class="perk-card amex">
+          <h3>Platinum hotel credit</h3>
+          <p class="perk-stat">Confirm <small>current card terms</small></p>
+          <ul>
+            <li>Often described as up to $600/year in two $300 semiannual credits on FHR / Hotel Collection prepaid bookings</li>
+            <li><strong>Confirm live terms</strong> before counting on it</li>
+            <li>Prefer FHR even if ADR slightly higher when breakfast + credit + upgrade odds exceed the delta</li>
+          </ul>
+        </article>
+
+        <article class="perk-card">
+          <h3>Hotels — other</h3>
+          <ul>
+            <li><strong>Best Western</strong> — Diamond Select status</li>
+            <li><strong>Marriott Bonvoy</strong> — Bonvoy Business Amex on file (mask ···1006) · AC / Residence Inn Wailea earn</li>
+          </ul>
+        </article>
+
+        <article class="perk-card">
+          <h3>Airlines</h3>
+          <ul>
+            <li><strong>Alaska Atmos</strong> — prefer when fare ≈ United</li>
+            <li><strong>Southwest RR #23060463414</strong> — ~66k pts</li>
+            <li><strong>United MP</strong> — ~120 mi</li>
+            <li><strong>ANA</strong> — ~135.7k · keep for Asia</li>
+            <li><strong>Delta</strong> — 8,800 · low priority</li>
+          </ul>
+        </article>
+
+        <article class="perk-card">
+          <h3>Other Amex cards</h3>
+          <ul>
+            <li>Gold ···2004</li>
+            <li>Blue Business Plus ···1007</li>
+            <li>Blue Business Cash ···1000</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="snapshot-note mt-1">
+        FHR overview:
+        <a href="https://www.americanexpress.com/en-us/travel/fine-hotels-and-resorts" rel="noopener" target="_blank">Amex Fine Hotels + Resorts</a> ·
+        <a href="https://www.americanexpress.com/en-us/travel/discover/property-results/dt/5/d/Maui" rel="noopener" target="_blank">Amex Maui luxury</a> ·
+        <a href="https://www.americanexpress.com/en-us/travel/discover/property-results/dt/4/d/Wailea,Hawaii" rel="noopener" target="_blank">Amex Wailea</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Budget (global, Maui-anchored) -->
+  <section id="budget" class="section-alt">
+    <div class="wrap">
+      <p class="section-label">Numbers</p>
+      <h2>Budget bands</h2>
+      <p class="lede">USD estimates for flights + ocean-view hotel only (2 adults, 7 nights). Anchored on Maui research; other islands will differ — use island panel estimates. Exclude food, car, activities, and most resort fees unless noted.</p>
+
+      <div class="budget-grid">
+        <article class="budget-card recommended">
+          <h3>Comfortable luxury</h3>
+          <div class="budget-range">~$5.5k–10k</div>
+          <p>Andaz / Fairmont OV + shoulder flights. The sweet spot for this trip.</p>
+        </article>
+        <article class="budget-card">
+          <h3>Premium</h3>
+          <div class="budget-range">~$8.5k–15k</div>
+          <p>Four Seasons Ocean-View or Hotel Wailea OV; stronger suites.</p>
+        </article>
+        <article class="budget-card">
+          <h3>Ultra / celebration</h3>
+          <div class="budget-range">$15k–25k+</div>
+          <p>Oceanfront suites, peak dates, Club floors — FS Maui Apr week is ~$40k alone.</p>
+        </article>
+      </div>
+
+      <div class="sample-total trip-snapshot">
+        <h3>Primary snapshot — Nov 10–17, 2026 · Andaz</h3>
+        <div class="math">
+          <div class="row"><span>Flights SFO or SJC → OGG (2 pax RT)</span><span>$541</span></div>
+          <div class="row"><span>Andaz Maui OV (Expedia)</span><span>$7,084</span></div>
+          <div class="row"><span>Sunset + Molokini + spa est. (2 adults)</span><span>~$1,536</span></div>
+          <div class="row total"><span>Approx. snapshot total</span><span>~$9,161</span></div>
+        </div>
+        <p style="margin-top:1rem;font-size:0.88rem;opacity:0.85;">
+          See <a href="#live-quotes">Live quotes</a> for screenshots + links.
+          Fairmont OV same week $9,781 · Hotel Wailea $15,427.
+          Snapshots as of Oct 6, 2026 PT.
+        </p>
+      </div>
+
+      <div class="sample-total">
+        <h3>Alt sample — Maui spring window (Apr 17–24, 2027)</h3>
+        <div class="math">
+          <div class="row"><span>Flights SFO–OGG nonstop (2 pax, United cheapest)</span><span>~$1,069</span></div>
+          <div class="row"><span>Andaz Maui OV (Expedia, refundable)</span><span>~$9,865</span></div>
+          <div class="row total"><span>Approx. flights + hotel</span><span>~$10,934</span></div>
+        </div>
+        <p style="margin-top:1rem;font-size:0.88rem;opacity:0.85;">
+          Alternatives same week: Hotel Wailea ~$8,692 + $1,069 ≈ <strong>~$9,761</strong> ·
+          Fairmont ~$10,569 + $1,069 ≈ <strong>~$11,638</strong>.
+          FHR breakfast + ~$100 credit + possible Platinum hotel credit reduce effective hotel cost — confirm terms.
+          Add ~$150–400/day meals/drinks for two at resort level (*not researched in detail*).
+          Snapshots as of Oct 6, 2026 PT.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practical -->
+  <section id="practical">
+    <div class="wrap">
+      <p class="section-label">Ops</p>
+      <h2>Practical notes</h2>
+      <div class="prac-grid mt-1">
+        <article class="prac-card">
+          <h3>Bags</h3>
+          <p>Alaska / United / Southwest (2026): checked bags generally <strong>not free</strong> on mainland↔Hawaii for basic fares — commonly ~$45 first / ~$55 second. Status or credit cards may waive. Pack resort-casual + reef-safe sunscreen.</p>
+        </article>
+        <article class="prac-card">
+          <h3>Car vs transfer</h3>
+          <p><strong>Maui / Wailea:</strong> can skip a full-week car if you stay on the Beach Walk. OGG ↔ Wailea ~30–45 min. <strong>Big Island / Kauai:</strong> car more useful — resorts are spread out.</p>
+        </article>
+        <article class="prac-card">
+          <h3>Time zone</h3>
+          <p>Hawaiʻi is UTC−10 (no DST) → <strong>3 hours behind PT</strong> in summer / <strong>2 hours behind</strong> when California is on standard time.</p>
+        </article>
+        <article class="prac-card">
+          <h3>Whale season</h3>
+          <p>Roughly Dec–May, peak Jan–Mar. Maui waters are among the best for humpbacks — bonus if you take a Jan window after Chicago. Apr–May still often has whales.</p>
+        </article>
+        <article class="prac-card">
+          <h3>Other</h3>
+          <ul>
+            <li>Hurricane season Jun–Nov — rare direct hits; monitor fall forecasts</li>
+            <li>Respect post-Lahaina recovery etiquette; prefer Wailea/south for Maui</li>
+          </ul>
+        </article>
+      </div>
+      <p class="snapshot-note mt-1">
+        <a href="https://eathealthy365.com/is-a-wailea-car-hire-necessary-for-your-trip/" rel="noopener" target="_blank">Wailea car guide</a> ·
+        <a href="https://www.thetraveler.org/kahului-airport-to-wailea-best-transfers-for-resort-stays/" rel="noopener" target="_blank">OGG–Wailea transfers</a> ·
+        <a href="https://www.hawaii-guide.com/maui/best-time-to-visit-maui" rel="noopener" target="_blank">Best time Maui</a> ·
+        <a href="https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/hawaii/10_Air_Service_Grid_October_2026_as_of_09_15_26_03f78359-b8b7-452c-99ea-1d0617f48c42.pdf" rel="noopener" target="_blank">HVCB Air Service Grid Oct 2026</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Next steps -->
+  <section id="next" class="section-alt">
+    <div class="wrap">
+      <p class="section-label">Action</p>
+      <h2>Next steps</h2>
+      <ol class="steps mt-1">
+        <li><strong>Confirm island</strong> — Maui is recommended; use the map above if you want to compare Oahu / Big Island / Kauai.</li>
+        <li><strong>Book hotel via Amex Travel FHR</strong> — For Maui: Andaz, Fairmont, or Grand Wailea (and Hotel Wailea if listed). Capture breakfast, ~$100 credit, upgrade odds, late checkout.</li>
+        <li><strong>Decide the Maui shortlist</strong> — Andaz (Hyatt + FHR + refundable ~$9,865) vs Fairmont (~$10,569) vs Hotel Wailea (~$8,692).</li>
+        <li><strong>Hold / book flights</strong> — Primary cheap week: <strong>Nov 10–17, 2026</strong> (~$541 nonstop, 2 pax). SJC Hawaiian/Alaska ties SFO United — use SJC for Companion Pass vibe. May 1–8 2027 remains the weather alt.</li>
+        <li><strong>Apply Hyatt points</strong> at Andaz if OV award inventory appears — ~136,782 pts on hand.</li>
+        <li><strong>Confirm Platinum hotel credit terms</strong> before counting $300×2 toward the prepaid FHR stay.</li>
+        <li><strong>Pick car strategy</strong> — Maui transfer-only vs midweek rental; Big Island/Kauai lean rental.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Hawaii · Ocean View — prepared for Leo · Oct 6, 2026 PT</p>
+      <p class="disclaimer">
+        Flight, hotel, and activity figures are <strong>snapshots</strong> (with screenshot links in Live quotes) from Google Flights, Expedia, and operator sites as of Oct 6, 2026 PT.
+        Prices change — verify live before booking.
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

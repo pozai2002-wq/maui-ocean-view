@@ -1,0 +1,17 @@
+{
+  "as_of": "2026-10-06 PT",
+  "source": "Google Flights calendar + checked itineraries",
+  "pax": 2,
+  "cheapest_total_usd": 541,
+  "winner": {
+    "depart": "2026-11-10",
+    "return": "2026-11-17",
+    "pattern": "Tue-Tue",
+    "options": [
+      {"origin":"SFO","airline":"United","nonstop":true,"price":541,"url":"https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NGT3IHCAESA09HRxoeEgoyMDI2LTExLTE3agcIARIDT0dHcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"},
+      {"origin":"SJC","airline":"Alaska/Hawaiian","nonstop":true,"price":541,"note":"carry-on typically included","url":"https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NKQ3IHCAESA09HRxoeEgoyMDI2LTExLTE3agcIARIDT0dHcgcIARIDU0pDQAJIAZgBAQ&curr=USD&hl=en"}
+    ]
+  },
+  "ties": ["2027-01-19/2027-01-26 SFO United $541","Jan 26–Feb 2 / Feb weeks calendar $541"],
+  "notes": ["May–Aug 2027 calendar not fully scanned; Mar–Apr already higher","WN nonstop not shown for Nov week; Companion Pass connection may still win"]
+}

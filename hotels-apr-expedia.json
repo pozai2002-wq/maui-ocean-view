@@ -1,0 +1,19 @@
+{
+  "source": "Expedia",
+  "destination": "Kihei/Wailea Maui",
+  "dates": {"checkin":"2027-04-17","checkout":"2027-04-24"},
+  "pax": 2,
+  "filter": "ocean_room_view",
+  "as_of": "2026-10-06 PT",
+  "hotels": [
+    {"name":"Maui Coast Hotel","rating":9.6,"reviews":2711,"nightly":419,"total":3484,"was":4056,"refundable":true,"url":"https://www.expedia.com/Kihei-Hotels-Maui-Coast-Hotel.h28645.Hotel-Information","notes":"Kihei, not Wailea strip"},
+    {"name":"Fairmont Kea Lani Maui","rating":9.6,"reviews":1006,"nightly":1272,"total":10569,"was":13089,"refundable":false,"url":"https://www.expedia.com/Kihei-Hotels-Fairmont-Kea-Lani-Maui.h8765.Hotel-Information","notes":"On beach; Oceanfront Suites; FHR candidate","loyalty":["amex_fhr"]},
+    {"name":"Four Seasons Resort Maui at Wailea","rating":9.6,"reviews":1000,"nightly":4826,"total":40101,"refundable":true,"url":"https://www.expedia.com/Kihei-Hotels-Four-Seasons-Resort-Maui-At-Wailea.h14336.Hotel-Information","notes":"1 left at price; FHR","loyalty":["amex_fhr"]},
+    {"name":"Hotel Wailea Maui","rating":9.4,"reviews":1000,"nightly":1046,"total":8692,"was":11305,"refundable":false,"notes":"Adults-oriented; hillside panoramic OV; FHR check","loyalty":["amex_fhr"]},
+    {"name":"AC Hotel by Marriott Maui Wailea","rating":9.2,"reviews":296,"nightly":544,"total":4521,"refundable":true,"url":"https://www.expedia.com/Kihei-Hotels-AC-Hotel-By-Marriott-Maui-Wailea.h57338761.Hotel-Information","loyalty":["bonvoy"]},
+    {"name":"Andaz Maui at Wailea Resort","rating":9.2,"reviews":1003,"nightly":1187,"total":9865,"refundable":true,"url":"https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information","notes":"Beachfront; Hyatt points + FHR","loyalty":["hyatt","amex_fhr"]},
+    {"name":"Residence Inn by Marriott Maui Wailea","rating":9.2,"reviews":1000,"nightly":458,"total":3806,"refundable":true,"url":"https://www.expedia.com/Kihei-Hotels-Residence-Inn-By-Marriott-Maui-Wailea.h12541875.Hotel-Information","notes":"No resort fee; breakfast","loyalty":["bonvoy"]},
+    {"name":"Aston Maui Hill","rating":9.0,"reviews":986,"nightly":306,"total":2545,"was":3648,"refundable":false,"url":"https://www.expedia.com/Kihei-Hotels-Aston-Maui-Hill.h24554.Hotel-Information","notes":"Great ocean view badge"},
+    {"name":"Hoolei Villas at Grand Wailea","rating":9.6,"reviews":54,"nightly":1944,"total":16157,"url":"https://www.expedia.com/Kihei-Hotels.h1661500.Hotel-Information"}
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "as_of": "2026-10-06",
+  "airlines": {
+    "southwest": {
+      "program": "Rapid Rewards",
+      "number": "23060463414",
+      "points": 66066,
+      "note": "Oct 6 email",
+      "companion_pass": true,
+      "companion_pass_note": "Companion Pass active \u2014 second passenger flies free (taxes/fees only) on Southwest"
+    },
+    "united": {
+      "program": "MileagePlus",
+      "number_masked": "...502",
+      "miles": 120,
+      "note": "Oct 5 partner email"
+    },
+    "ana": {
+      "program": "Mileage Club",
+      "status": "ANA Card / Super Flyers Card member",
+      "miles": 135703,
+      "premium_points": 0,
+      "as_of": "2026-09-01 JST"
+    },
+    "alaska": {
+      "program": "Atmos Rewards",
+      "note": "Member since Mar 2026; Alaska+Hawaiian"
+    },
+    "delta": {
+      "program": "SkyMiles",
+      "number": "9568626239",
+      "miles": 8800,
+      "as_of": "2026-03"
+    },
+    "aa": {
+      "program": "AAdvantage",
+      "note": "Receives partner emails; balance not confirmed"
+    }
+  },
+  "hotels": {
+    "hyatt": {
+      "points": 136782,
+      "as_of": "2026-09-24"
+    },
+    "best_western": {
+      "status": "Diamond Select"
+    },
+    "marriott_bonvoy": {
+      "note": "Bonvoy Business Amex card on file"
+    }
+  },
+  "cards": {
+    "amex_business_platinum": {
+      "mask": "1005",
+      "perks": [
+        "Fine Hotels + Resorts",
+        "Hotel Collection",
+        "Amex Travel",
+        "lounge"
+      ]
+    },
+    "amex_gold": {
+      "mask": "2004"
+    },
+    "amex_blue_business_plus": {
+      "mask": "1007"
+    },
+    "amex_bonvoy_business": {
+      "mask": "1006"
+    },
+    "amex_blue_business_cash": {
+      "mask": "1000"
+    }
+  },
+  "hawaii_plan_notes": [
+    "Companion Pass: strongly prefer Southwest nonstops SJC\u2013OGG (WN starts ~Nov 21 2026) so the companion flies free; taxes only on companion ticket",
+    "Prefer Alaska/Hawaiian Atmos earn on SFO-OGG nonstops when fare is close to United",
+    "Check Amex FHR properties in Wailea/Maui for $100 credit + breakfast + late checkout",
+    "Hyatt points usable at Andaz Maui / Hyatt Regency Maui if ocean-view available",
+    "Southwest Rapid Rewards strong domestically but limited Hawaii nonstop utility from SFO vs Alaska/United",
+    "ANA miles not useful for domestic Hawaii; preserve for Asia awards"
+  ]
+}

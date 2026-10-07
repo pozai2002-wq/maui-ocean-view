@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sfo-ogg-2026-10-17",
+    "origin": "SFO",
+    "dest": "OGG",
+    "depart": "2026-10-17",
+    "ret": "2026-10-24",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMC0xN2oHCAESA1NGT3IHCAESA09HRxoeEgoyMDI2LTEwLTI0agcIARIDT0dHcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "id": "sjc-ogg-2026-10-17",
+    "origin": "SJC",
+    "dest": "OGG",
+    "depart": "2026-10-17",
+    "ret": "2026-10-24",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMC0xN2oHCAESA1NKQ3IHCAESA09HRxoeEgoyMDI2LTEwLTI0agcIARIDT0dHcgcIARIDU0pDQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "id": "sfo-ogg-2027-04-17",
+    "origin": "SFO",
+    "dest": "OGG",
+    "depart": "2027-04-17",
+    "ret": "2027-04-24",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNy0wNC0xN2oHCAESA1NGT3IHCAESA09HRxoeEgoyMDI3LTA0LTI0agcIARIDT0dHcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "id": "sjc-ogg-2027-04-17",
+    "origin": "SJC",
+    "dest": "OGG",
+    "depart": "2027-04-17",
+    "ret": "2027-04-24",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNy0wNC0xN2oHCAESA1NKQ3IHCAESA09HRxoeEgoyMDI3LTA0LTI0agcIARIDT0dHcgcIARIDU0pDQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "id": "sfo-ogg-2027-05-01",
+    "origin": "SFO",
+    "dest": "OGG",
+    "depart": "2027-05-01",
+    "ret": "2027-05-08",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNy0wNS0wMWoHCAESA1NGT3IHCAESA09HRxoeEgoyMDI3LTA1LTA4agcIARIDT0dHcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"
+  },
+  {
+    "id": "sjc-ogg-2027-05-01",
+    "origin": "SJC",
+    "dest": "OGG",
+    "depart": "2027-05-01",
+    "ret": "2027-05-08",
+    "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNy0wNS0wMWoHCAESA1NKQ3IHCAESA09HRxoeEgoyMDI3LTA1LTA4agcIARIDT0dHcgcIARIDU0pDQAJIAZgBAQ&curr=USD&hl=en"
+  }
+]

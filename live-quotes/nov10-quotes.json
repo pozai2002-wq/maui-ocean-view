@@ -1,0 +1,105 @@
+{
+  "as_of": "2026-10-06 PT",
+  "window": {
+    "depart": "2026-11-10",
+    "return": "2026-11-17",
+    "pattern": "Tue–Tue",
+    "nights": 7,
+    "adults": 2
+  },
+  "flights": {
+    "total_rt_usd": 541,
+    "note": "2 adults round-trip nonstop to OGG",
+    "options": [
+      {
+        "origin": "SFO",
+        "airline": "United",
+        "price_usd": 541,
+        "screenshot": "media/flight-sfo-ogg.webp",
+        "url": "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0xMS0xMGoHCAESA1NGT3IHCAESA09HRxoeEgoyMDI2LTExLTE3agcIARIDT0dHcgcIARIDU0ZPQAJIAZgBAQ&curr=USD&hl=en"
+      },
+      {
+        "origin": "SJC",
+        "airline": "Alaska/Hawaiian",
+        "price_usd": 541,
+        "screenshot": "media/flight-sjc-ogg.webp",
+        "url": "https://www.google.com/travel/flights?q=Flights%20from%20SJC%20to%20OGG%20on%202026-11-10%20through%202026-11-17%20nonstop%202%20adults&curr=USD&hl=en"
+      }
+    ]
+  },
+  "hotels": {
+    "note": "Expedia ocean-view totals · Wailea · Nov 10–17 2026 · 2 adults · 1 room",
+    "options": [
+      {
+        "name": "Andaz Maui at Wailea",
+        "total_usd": 7084,
+        "screenshot": "media/expedia-andaz.webp",
+        "url": "https://www.expedia.com/Hotel-Search?destination=Wailea%2C%20Maui&startDate=2026-11-10&endDate=2026-11-17&adults=2&rooms=1&room_views_group=ocean_room_view&hotelName=Andaz%20Maui"
+      },
+      {
+        "name": "Fairmont Kea Lani",
+        "total_usd": 9781,
+        "screenshot": "media/expedia-fairmont.webp",
+        "url": "https://www.expedia.com/Hotel-Search?destination=Wailea%2C%20Maui&startDate=2026-11-10&endDate=2026-11-17&adults=2&rooms=1&room_views_group=ocean_room_view&hotelName=Fairmont%20Kea%20Lani"
+      },
+      {
+        "name": "Hotel Wailea",
+        "total_usd": 15427,
+        "screenshot": "media/expedia-hotel-wailea.webp",
+        "url": "https://www.expedia.com/Hotel-Search?destination=Wailea%2C%20Maui&startDate=2026-11-10&endDate=2026-11-17&adults=2&rooms=1&room_views_group=ocean_room_view&hotelName=Hotel%20Wailea"
+      }
+    ],
+    "list_screenshot": "media/expedia-wailea-ocean-list.webp"
+  },
+  "activities": [
+    {
+      "name": "Kai Kanani Adventure Sunset Sail",
+      "price_per_adult_usd": 199,
+      "price_note": "per adult",
+      "screenshot": "media/kaikanani-sunset-sail.webp",
+      "url": "https://kaikanani.com/our-tours/adventure-sunset-sail/"
+    },
+    {
+      "name": "Kai Kanani Signature Deluxe Snorkel (Molokini)",
+      "price_per_adult_usd": 269,
+      "price_note": "per adult",
+      "screenshot": "media/kaikanani-signature-snorkel.webp",
+      "url": "https://kaikanani.com/our-tours/signature-deluxe-snorkel/"
+    },
+    {
+      "name": "Pacific Whale Foundation Whale & Dolphin",
+      "price_from_usd": 99,
+      "price_note": "from ~$99",
+      "screenshot": "media/pacwhale-whale-watch.webp",
+      "url": "https://pacwhale.com/ecotours/whale-dolphin/"
+    },
+    {
+      "name": "Andaz Maui spa",
+      "price_usd": null,
+      "price_note": "n/a on page — estimate ~$200–400+/pp",
+      "screenshot": "media/andaz-spa.webp",
+      "url": "https://andazmauiatwailea.com/spa-and-wellness/"
+    },
+    {
+      "name": "Blue Hawaiian Majestic Maui",
+      "price_from_usd": 419,
+      "price_note": "from $419/pp",
+      "screenshot": "media/bluehawaiian-majestic-maui.webp",
+      "url": "https://www.bluehawaiian.com/en/maui/tours/majestic-maui"
+    }
+  ],
+  "rough_trip_total_andaz": {
+    "label": "Snapshot · Nov 10–17 2026 · flights + Andaz + core activities",
+    "flights_usd": 541,
+    "hotel_andaz_usd": 7084,
+    "sunset_sail_2adults_usd": 398,
+    "molokini_snorkel_2adults_usd": 538,
+    "spa_estimate_2pax_usd": 600,
+    "sum_usd": 9161,
+    "notes": [
+      "Spa is an estimate (menu price n/a on page); sunset + snorkel use live per-adult rates × 2",
+      "Excludes whale watch, heli, food, car, bags, resort fees beyond Expedia hotel total",
+      "Verify live before booking — snapshots as of Oct 6, 2026 PT"
+    ]
+  }
+}

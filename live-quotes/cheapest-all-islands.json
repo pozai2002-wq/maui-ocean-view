@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-10-06 PT",
+  "scan_through": "2027-07",
+  "method": "spot-check Mar–Jul 2027 + prior calendar through Feb",
+  "overall_winner": {"island":"Maui","price":541,"dates":"2026-11-10/17"},
+  "by_island": [
+    {"island":"Maui","code":"OGG","price":541,"week":"2026-11-10/17"},
+    {"island":"Kauai","code":"LIH","price":721,"week":"2026-11-12/19","tie":"2027-03-02/09"},
+    {"island":"Oahu","code":"HNL","price":739,"week":"late Oct/early Nov 2026"},
+    {"island":"Big Island","code":"KOA","price":913,"week":"2027-03-02/09","origin":"SFO","prior":1033}
+  ]
+}
