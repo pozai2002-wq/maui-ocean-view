@@ -1472,6 +1472,15 @@ body[data-selected-island="maui"] .island-chip[data-island-select="maui"] .chip-
   margin: 0;
   font-weight: 500;
 }
+.tier-stay a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+.tier-stay a:hover {
+  color: var(--accent, #0b6e4f);
+}
 .tier-card.tier-high .tier-total {
   color: #8a4b3a;
 }

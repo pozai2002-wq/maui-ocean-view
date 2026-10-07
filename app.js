@@ -10,24 +10,24 @@
   /** All-in Low/Base/High — verified Oct 6–7 2026 PT (see live-quotes/hawaii-tiers-low-base-high.json) */
   const TIERS = {
     maui: {
-      low:  { dates: "Nov 10–17 2026", flight: 541, flightNote: "Cash 2-pax RT", hotel: 1397, hotelNote: "Kihei Akahi #C-520", other: 1400, total: 3338, stay: "Kihei Akahi #C-520 condo", recommend: true },
-      base: { dates: "Nov 10–17 2026", flight: 541, flightNote: "Cash 2-pax RT", hotel: 1590, hotelNote: "Kihei condo mid band", other: 1800, total: 3931, stay: "Kihei near-beach condo (mid)" },
-      high: { dates: "Nov hotel · peakish flight", flight: 1280, flightNote: "Peakish (~Oct $1,278 snap)", hotel: 7084, hotelNote: "Andaz Maui OV", other: 2400, total: 10764, stay: "Andaz Maui OV (Wailea splurge)" }
+      low:  { dates: "Nov 10\u201317 2026", flight: 541, flightNote: "Cash 2-pax RT", hotel: 1397, hotelNote: "Kihei Akahi #C-520 \u00b7 Expedia live", other: 1400, total: 3338, stay: "Kihei Akahi #C-520 condo", stayUrl: "https://www.expedia.com/Kihei-Hotels-Kihei-Akahi-C-520-Tastefully-Updated.h56513057.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2", recommend: true },
+      base: { dates: "Nov 10\u201317 2026", flight: 541, flightNote: "Cash 2-pax RT", hotel: 2025, hotelNote: "Mana Kai Maui beachfront \u00b7 Expedia live", other: 1800, total: 4366, stay: "Mana Kai Maui \u00b7 beachfront Kihei", stayUrl: "https://www.expedia.com/Kihei-Hotels-Mana-Kai-Maui.h27810.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2" },
+      high: { dates: "Nov hotel \u00b7 peakish flight", flight: 1280, flightNote: "Peakish (~Oct $1,278 snap)", hotel: 6666, hotelNote: "Andaz Maui OV \u00b7 Expedia live", other: 2400, total: 10346, stay: "Andaz Maui at Wailea \u00b7 ocean view", stayUrl: "https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2" }
     },
     oahu: {
-      low:  { dates: "Nov 10–17 2026", flight: 426, flightNote: "CP est. $415+$11 (seats not held)", hotel: 1655, hotelNote: "Hyatt Place Waikiki", other: 1340, total: 3421, stay: "Hyatt Place Waikiki · city view + breakfast", recommend: true },
-      base: { dates: "Nov 10–17 2026", flight: 739, flightNote: "Cash 2-pax RT", hotel: 1655, hotelNote: "Hyatt Place Waikiki", other: 1340, total: 3734, stay: "Hyatt Place Waikiki · city view + breakfast" },
-      high: { dates: "Nov · peakish est.", flight: 960, flightNote: "Est. ~1.3× cash", hotel: 3310, hotelNote: "~2× mid (est.)", other: 2400, total: 6670, stay: "Step-up Waikiki/Ko Olina OV (~2× mid · est.)" }
+      low:  { dates: "Nov 10\u201317 2026", flight: 426, flightNote: "CP est. $415+$11 (seats not held)", hotel: 1655, hotelNote: "Hyatt Place Waikiki \u00b7 Expedia live", other: 1340, total: 3421, stay: "Hyatt Place Waikiki \u00b7 city view + breakfast", stayUrl: "https://www.expedia.com/Honolulu-Hotels-Hyatt-Place-Waikiki-Beach.h2766.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2", recommend: true },
+      base: { dates: "Nov 10\u201317 2026", flight: 739, flightNote: "Cash 2-pax RT", hotel: 2608, hotelNote: "OUTRIGGER Reef Waikiki Beach \u00b7 Expedia live", other: 1800, total: 5147, stay: "OUTRIGGER Reef Waikiki Beach Resort", stayUrl: "https://www.expedia.com/Honolulu-Hotels-OUTRIGGER-Reef-Waikiki-Beach-Resort.h23249.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2" },
+      high: { dates: "Nov \u00b7 peakish est.", flight: 960, flightNote: "Est. ~1.3\u00d7 cash", hotel: 6849, hotelNote: "Halekulani \u00b7 Expedia live", other: 2400, total: 10209, stay: "Halekulani \u00b7 Waikiki", stayUrl: "https://www.expedia.com/Honolulu-Hotels-Halekulani.h20136.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2" }
     },
     bigisland: {
-      low:  { dates: "Nov 2026 (CP)", flight: 522, flightNote: "CP est. $511+$11 (seats not held)", hotel: 2075, hotelNote: "Courtyard Kona Beach", other: 1400, total: 3997, stay: "Courtyard Kona · resort view", recommend: true },
-      base: { dates: "Mar 2–9 2027 flights", flight: 913, flightNote: "Cash cheapest improved week", hotel: 2075, hotelNote: "Courtyard Kona (Nov proxy)", other: 2178, total: 5166, stay: "Courtyard Kona · resort view" },
-      high: { dates: "Nov cash peakish", flight: 1033, flightNote: "Prior Nov cash ~$1,033", hotel: 4150, hotelNote: "~2× mid (est.)", other: 2400, total: 7583, stay: "Step-up Kona–Kohala OV (~2× mid · est.)" }
+      low:  { dates: "Nov 2026 (CP)", flight: 522, flightNote: "CP est. $511+$11 (seats not held)", hotel: 2075, hotelNote: "Courtyard Kona \u00b7 resort view \u00b7 Expedia live", other: 1400, total: 3997, stay: "Courtyard Kona Beach \u00b7 resort view", stayUrl: "https://www.expedia.com/Kailua-Kona-Hotels-Courtyard-By-Marriott-King-Kamehamehas-Kona-Beach-Hotel.h21741.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2", recommend: true },
+      base: { dates: "Mar 2\u20139 2027 flights \u00b7 hotel Nov Expedia", flight: 913, flightNote: "Cash cheapest improved week", hotel: 2516, hotelNote: "Outrigger Kona Resort & Spa \u00b7 Expedia live", other: 2178, total: 5607, stay: "Outrigger Kona Resort and Spa", stayUrl: "https://www.expedia.com/Kailua-Kona-Hotels-Outrigger-Kona-Resort-And-Spa.h49175916.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2" },
+      high: { dates: "Nov cash + Kohala resort", flight: 1033, flightNote: "Prior Nov cash ~$1,033", hotel: 8450, hotelNote: "Fairmont Orchid \u00b7 Expedia live", other: 2400, total: 11883, stay: "Fairmont Orchid, Kohala Coast", stayUrl: "https://www.expedia.com/Kamuela-Hotels-Fairmont-Orchid.h25190.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2" }
     },
     kauai: {
-      low:  { dates: "~Nov 12–19 2026", flight: 336, flightNote: "CP est. $325+$11 (seats not held)", hotel: 2335, hotelNote: "Kauai Shores garden", other: 1400, total: 4071, stay: "Kauai Shores · garden view", recommend: true },
-      base: { dates: "~Nov 12–19 2026", flight: 721, flightNote: "Cash 2-pax RT", hotel: 2335, hotelNote: "Kauai Shores garden", other: 2306, total: 5362, stay: "Kauai Shores · garden view" },
-      high: { dates: "Nov · peakish est.", flight: 940, flightNote: "Est. ~1.3× cash", hotel: 4670, hotelNote: "~2× mid (est.)", other: 2400, total: 8010, stay: "Step-up Poipu OV (~2× mid · est.)" }
+      low:  { dates: "~Nov 12\u201319 2026", flight: 336, flightNote: "CP est. $325+$11 (seats not held)", hotel: 2335, hotelNote: "Kauai Shores garden \u00b7 Expedia live", other: 1400, total: 4071, stay: "Kauai Shores \u00b7 garden view", stayUrl: "https://www.expedia.com/Kapaa-Hotels-Kauai-Shores-Hotel.h9733.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2", recommend: true },
+      base: { dates: "~Nov 12\u201319 2026", flight: 721, flightNote: "Cash 2-pax RT", hotel: 3050, hotelNote: "Sheraton Kauai Resort Villas \u00b7 Expedia live", other: 2306, total: 6077, stay: "Sheraton Kauai Resort Villas \u00b7 Poipu", stayUrl: "https://www.expedia.com/Koloa-Hotels-Sheraton-Kauai-Resort-Villas.h41815407.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2" },
+      high: { dates: "Nov \u00b7 peakish est.", flight: 940, flightNote: "Est. ~1.3\u00d7 cash", hotel: 3978, hotelNote: "Koloa Landing Autograph \u00b7 Expedia live (GH Kauai not listed)", other: 2400, total: 7318, stay: "Koloa Landing Resort at Poipu", stayUrl: "https://www.expedia.com/Koloa-Hotels-Koloa-Landing-Resort-At-Poipu.h3812333.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2" }
     }
   };
 
@@ -64,7 +64,7 @@
         ],
       },
       shortlist:
-        "Default: Kihei mid-range condo (Low/Base). Wailea Andaz / Fairmont / Hotel Wailea are High / splurge only. Live Expedia Nov 10–17 2026: Kihei Akahi #C-520 $1,397 · Andaz OV $7,084.",
+        "Low: Kihei Akahi #C-520 $1,397. Base: Mana Kai Maui beachfront $2,025. High: Andaz Maui OV $6,666 (Expedia Nov 10–17).",
       hotels: [
         {
           tag: "Recommended · Mid-range (Low)",
@@ -305,14 +305,14 @@
         ],
       },
       shortlist:
-        "Default Low/Base: Hyatt Place Waikiki Beach $1,655 (Expedia Nov 10–17, city view + breakfast). Halekulani / FS Ko Olina are High step-up estimates.",
+        "Low: Hyatt Place Waikiki $1,655. Base: OUTRIGGER Reef Waikiki Beach $2,608. High: Halekulani $6,849 (Expedia Nov 10–17).",
       hotels: [
         {
-          tag: "Recommended · Mid-range (Low/Base)",
+          tag: "Recommended · Mid-range (Low)",
           shortlist: true,
           name: "Hyatt Place Waikiki Beach",
           blurb:
-            "City view + breakfast included. Live Expedia total Nov 10–17 2026 — Dot-budget mid-range for Oahu Low/Base.",
+            "City view + breakfast included. Live Expedia total Nov 10–17 2026 — Oahu Low stay (Base is OUTRIGGER Reef).",
           meta: [
             ["Room", "Deluxe 1 King + sofa · city view · breakfast"],
             ["Refundable", "Fully refundable before Nov 7 (confirm live)"],
@@ -467,10 +467,10 @@
         ],
       },
       shortlist:
-        "Default Low/Base: Courtyard King Kamehameha’s Kona Beach $2,075 (Expedia Nov 10–17, resort view; OV alt $2,474). FS Hualalai / Fairmont Orchid are High step-up estimates.",
+        "Low: Courtyard Kona Beach resort view $2,075. Base: Outrigger Kona Resort & Spa $2,516. High: Fairmont Orchid $8,450 (Expedia Nov 10–17).",
       hotels: [
         {
-          tag: "Recommended · Mid-range (Low/Base)",
+          tag: "Recommended · Mid-range (Low)",
           shortlist: true,
           name: "Courtyard King Kamehameha’s Kona Beach",
           blurb:
@@ -632,14 +632,14 @@
         ],
       },
       shortlist:
-        "Default Low/Base: Kauai Shores Hotel $2,335 garden view (Expedia Nov 10–17). Poipu / North Shore luxury is High step-up (~2× mid estimate).",
+        "Low: Kauai Shores $2,335 garden. Base: Sheraton Kauai Resort Villas $3,050. High: Koloa Landing $3,978 (Expedia Nov 10–17; Grand Hyatt not listed).",
       hotels: [
         {
-          tag: "Recommended · Mid-range (Low/Base)",
+          tag: "Recommended · Mid-range (Low)",
           shortlist: true,
           name: "Kauai Shores Hotel",
           blurb:
-            "Garden-view renovated room; parking included. Live Expedia total Nov 10–17 2026 — Dot-budget mid-range for Kauai Low/Base.",
+            "Garden-view renovated room; parking included. Live Expedia total Nov 10–17 2026 — Kauai Low stay (Base is Sheraton Villas).",
           meta: [
             ["Room", "Garden View (renovated) · parking included"],
             ["Refundable", "Fully refundable before Nov 7 (confirm live)"],
@@ -901,7 +901,7 @@
             <li class="tier-note">${escapeHtml(row.hotelNote)}</li>
             <li><span>Other</span><strong>${money(row.other)}</strong></li>
           </ul>
-          <p class="tier-stay">${escapeHtml(row.stay)}</p>
+          <p class="tier-stay">${row.stayUrl ? `<a href="${escapeHtml(row.stayUrl)}" target="_blank" rel="noopener">${escapeHtml(row.stay)}</a>` : escapeHtml(row.stay)}</p>
         </article>`;
       })
       .join("");
@@ -962,7 +962,7 @@
           <p class="section-label">Stay</p>
           <h3 id="hotels-heading-dyn">Stays — ${escapeHtml(data.title)}</h3>
           <p class="lede">${escapeHtml(
-            "Low/Base lead with mid-range (live Expedia Nov 10–17 where shown). Wailea / luxury cards are High / splurge only. Confirm categories and refund rules live."
+            "Each tier uses a distinct named hotel (live Expedia Nov 10–17). Hotel names on Low/Base/High cards are clickable. Confirm categories and refund rules live."
           )}</p>
           <div class="shortlist-banner">${data.shortlist}</div>
           <div class="hotel-grid">${data.hotels.map(hotelCard).join("")}</div>

@@ -1,0 +1,72 @@
+{
+  "source": "Expedia live search cards, 2026-10-07",
+  "dates": "2026-11-10 to 2026-11-17",
+  "adults": 2,
+  "note": "Totals from search cards (lead room), not opened detail OV room. Grand Hyatt Kauai not listed; used Koloa Landing for Kauai High.",
+  "quotes": [
+    {
+      "tier": "base",
+      "island": "Big Island",
+      "name": "Outrigger Kona Resort and Spa",
+      "total": 2516,
+      "nightly": 303,
+      "url": "https://www.expedia.com/Kailua-Kona-Hotels-Outrigger-Kona-Resort-And-Spa.h49175916.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+    },
+    {
+      "tier": "high",
+      "island": "Big Island",
+      "name": "Fairmont Orchid",
+      "total": 8450,
+      "nightly": 1017,
+      "url": "https://www.expedia.com/Kamuela-Hotels-Fairmont-Orchid.h25190.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+    },
+    {
+      "tier": "base",
+      "island": "Oahu",
+      "name": "OUTRIGGER Reef Waikiki Beach Resort",
+      "total": 2608,
+      "nightly": 314,
+      "url": "https://www.expedia.com/Honolulu-Hotels-OUTRIGGER-Reef-Waikiki-Beach-Resort.h23249.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+    },
+    {
+      "tier": "high",
+      "island": "Oahu",
+      "name": "Halekulani",
+      "total": 6849,
+      "nightly": 824,
+      "url": "https://www.expedia.com/Honolulu-Hotels-Halekulani.h20136.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+    },
+    {
+      "tier": "base",
+      "island": "Kauai",
+      "name": "Sheraton Kauai Resort Villas",
+      "total": 3050,
+      "nightly": 367,
+      "url": "https://www.expedia.com/Koloa-Hotels-Sheraton-Kauai-Resort-Villas.h41815407.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+    },
+    {
+      "tier": "high",
+      "island": "Kauai",
+      "name": "Koloa Landing Resort at Poipu",
+      "total": 3978,
+      "nightly": 479,
+      "url": "https://www.expedia.com/Koloa-Hotels-Koloa-Landing-Resort-At-Poipu.h3812333.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+    },
+    {
+      "tier": "base",
+      "island": "Maui",
+      "name": "Mana Kai Maui",
+      "total": 2025,
+      "nightly": 244,
+      "url": "https://www.expedia.com/Kihei-Hotels-Mana-Kai-Maui.h27810.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+    },
+    {
+      "tier": "high",
+      "island": "Maui",
+      "name": "Andaz Maui at Wailea Resort",
+      "total": 6666,
+      "nightly": 802,
+      "url": "https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2"
+    }
+  ]
+}
