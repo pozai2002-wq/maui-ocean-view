@@ -1,9 +1,35 @@
 /**
  * Hawaii trip — interactive island map
- * Snapshots / estimates as of Oct 6, 2026 PT — verify live before booking.
+ * Snapshots / estimates as of Oct 6–7, 2026 PT — verify live before booking.
+ * Low/Base/High all-in tiers; mid-range default; Wailea = High only.
  */
 (function () {
   "use strict";
+
+
+  /** All-in Low/Base/High — verified Oct 6–7 2026 PT (see live-quotes/hawaii-tiers-low-base-high.json) */
+  const TIERS = {
+    maui: {
+      low:  { dates: "Nov 10–17 2026", flight: 541, flightNote: "Cash 2-pax RT", hotel: 1397, hotelNote: "Kihei Akahi #C-520", other: 1400, total: 3338, stay: "Kihei Akahi #C-520 condo", recommend: true },
+      base: { dates: "Nov 10–17 2026", flight: 541, flightNote: "Cash 2-pax RT", hotel: 1590, hotelNote: "Kihei condo mid band", other: 1800, total: 3931, stay: "Kihei near-beach condo (mid)" },
+      high: { dates: "Nov hotel · peakish flight", flight: 1280, flightNote: "Peakish (~Oct $1,278 snap)", hotel: 7084, hotelNote: "Andaz Maui OV", other: 2400, total: 10764, stay: "Andaz Maui OV (Wailea splurge)" }
+    },
+    oahu: {
+      low:  { dates: "Nov 10–17 2026", flight: 426, flightNote: "CP est. $415+$11 (seats not held)", hotel: 1655, hotelNote: "Hyatt Place Waikiki", other: 1340, total: 3421, stay: "Hyatt Place Waikiki · city view + breakfast", recommend: true },
+      base: { dates: "Nov 10–17 2026", flight: 739, flightNote: "Cash 2-pax RT", hotel: 1655, hotelNote: "Hyatt Place Waikiki", other: 1340, total: 3734, stay: "Hyatt Place Waikiki · city view + breakfast" },
+      high: { dates: "Nov · peakish est.", flight: 960, flightNote: "Est. ~1.3× cash", hotel: 3310, hotelNote: "~2× mid (est.)", other: 2400, total: 6670, stay: "Step-up Waikiki/Ko Olina OV (~2× mid · est.)" }
+    },
+    bigisland: {
+      low:  { dates: "Nov 2026 (CP)", flight: 522, flightNote: "CP est. $511+$11 (seats not held)", hotel: 2075, hotelNote: "Courtyard Kona Beach", other: 1400, total: 3997, stay: "Courtyard Kona · resort view", recommend: true },
+      base: { dates: "Mar 2–9 2027 flights", flight: 913, flightNote: "Cash cheapest improved week", hotel: 2075, hotelNote: "Courtyard Kona (Nov proxy)", other: 2178, total: 5166, stay: "Courtyard Kona · resort view" },
+      high: { dates: "Nov cash peakish", flight: 1033, flightNote: "Prior Nov cash ~$1,033", hotel: 4150, hotelNote: "~2× mid (est.)", other: 2400, total: 7583, stay: "Step-up Kona–Kohala OV (~2× mid · est.)" }
+    },
+    kauai: {
+      low:  { dates: "~Nov 12–19 2026", flight: 336, flightNote: "CP est. $325+$11 (seats not held)", hotel: 2335, hotelNote: "Kauai Shores garden", other: 1400, total: 4071, stay: "Kauai Shores · garden view", recommend: true },
+      base: { dates: "~Nov 12–19 2026", flight: 721, flightNote: "Cash 2-pax RT", hotel: 2335, hotelNote: "Kauai Shores garden", other: 2306, total: 5362, stay: "Kauai Shores · garden view" },
+      high: { dates: "Nov · peakish est.", flight: 940, flightNote: "Est. ~1.3× cash", hotel: 4670, hotelNote: "~2× mid (est.)", other: 2400, total: 8010, stay: "Step-up Poipu OV (~2× mid · est.)" }
+    }
+  };
 
   const ISLANDS = {
     maui: {
@@ -11,14 +37,14 @@
       name: "Maui",
       airport: "OGG",
       recommended: true,
-      title: "Maui / Wailea",
-      eyebrow: "Recommended · Couples ocean-view",
+      title: "Maui / Kihei–Wailea",
+      eyebrow: "Recommended · Mid-range default (Low tier)",
       pitch:
-        "Best density of beachfront luxury with marketable Ocean View / Oceanfront categories, calm swimming beaches, and a walkable resort strip — plus nonstops from both SFO and SJC.",
+        "Cheapest all-in island for this brief: ~$541 nonstops + Kihei condo mid-range (~$1.4–1.8k) puts Low near ~$3.3k. Wailea Andaz/Fairmont stay under High / splurge only — not the default path.",
       fit: [
-        "Strongest couples / girlfriend-trip fit",
-        "True OV at Andaz, Fairmont, FS, Grand Wailea, Hotel Wailea",
-        "Car optional if you stay on the Wailea Beach Walk",
+        "Lowest all-in Low tier (~$3,338) — recommended default",
+        "Mid-range: Kihei ocean-view / near-beach condos ~$1,397–$1,777 (7n)",
+        "High / splurge only: Andaz / Fairmont / Hotel Wailea OV",
         "Nonstops from SFO + SJC (Alaska, United; WN SJC~Nov 21 2026)",
       ],
       flights: {
@@ -38,11 +64,28 @@
         ],
       },
       shortlist:
-        "Shortlist: Andaz (Hyatt ~137k pts + FHR + refundable ~$9,865) vs Fairmont Kea Lani (~$10,569 beachfront suites) vs Hotel Wailea (~$8,692 adults-only). Four Seasons ~$40k that week is too high unless celebration. Expedia OV totals for Apr 17–24, 2027 · as of Oct 6, 2026 PT.",
+        "Default: Kihei mid-range condo (Low/Base). Wailea Andaz / Fairmont / Hotel Wailea are High / splurge only. Live Expedia Nov 10–17 2026: Kihei Akahi #C-520 $1,397 · Andaz OV $7,084.",
       hotels: [
         {
-          tag: "Shortlist · Hyatt + FHR",
+          tag: "Recommended · Mid-range (Low)",
           shortlist: true,
+          name: "Kihei Akahi #C-520",
+          blurb:
+            "Corner studio condo — near-beach Kihei, balcony, 5th floor. Live Expedia total for Nov 10–17 2026. Fully refundable only until Oct 11 — re-check before booking.",
+          meta: [
+            ["Request", "Confirm bed / balcony / parking; condo not full-service resort"],
+            ["Band", "Kihei ocean-view / near-beach condos roughly $1,397–$1,777 for 7 nights"],
+          ],
+          price: "$1,397",
+          priceSrc:
+            "Expedia live · Nov 10–17 2026 · 7 nights · 2 adults · $171/nt · as of Oct 7 2026 PT",
+          links: [
+            { label: "Expedia", href: "https://www.expedia.com/Kihei-Hotels-Kihei-Akahi-C-520-Tastefully-Updated.h56513057.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2", solid: true },
+          ],
+        },
+        {
+          tag: "High / splurge · Hyatt + FHR",
+          shortlist: false,
           name: "Andaz Maui at Wailea",
           blurb:
             "Cascading ocean-facing infinity pools; reef snorkeling off Mokapu/Ulua; modern lanais; intimate vs mega-resort. Best loyalty fit for Leo.",
@@ -50,18 +93,18 @@
             ["Request", "Ocean View (avoid Garden / Mountain); villas for plunge-pool + stronger frontage"],
             ["Amex / loyalty", "FHR · Hyatt points (~136,782 as of Sep 24) — award nights if OV available"],
           ],
-          price: "$9,865",
+          price: "$7,084",
           priceSrc:
-            "Expedia OV total · Apr 17–24 2027 · refundable · $1,187/nt · as of Oct 6 2026 PT",
+            "Expedia OV total · Nov 10–17 2026 · High / splurge · as of Oct 6 2026 PT (Apr week was ~$9,865)",
           links: [
             { label: "Amex FHR", href: "https://www.americanexpress.com/en-us/travel/discover/property/Andaz-Maui-At-Wailea-Resort", solid: true },
             { label: "Official", href: "https://www.hyatt.com/andaz/maui-hotels/hnlwa-andaz-maui-at-wailea-resort" },
-            { label: "Expedia", href: "https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information" },
+            { label: "Expedia", href: "https://www.expedia.com/Hotel-Search?destination=Wailea%2C%20Maui&startDate=2026-11-10&endDate=2026-11-17&adults=2&rooms=1&room_views_group=ocean_room_view&hotelName=Andaz%20Maui" },
           ],
         },
         {
-          tag: "Shortlist · All-suite beachfront",
-          shortlist: true,
+          tag: "High / splurge · All-suite beachfront",
+          shortlist: false,
           name: "Fairmont Kea Lani",
           blurb:
             "All-suite property on quieter Polo Beach; large private lanais. Strong “suite for two” beachfront feel.",
@@ -69,9 +112,9 @@
             ["Request", "Oceanview Suite; prefer Deluxe or Signature Oceanview (top floors)"],
             ["Amex / loyalty", "FHR (confirm on Amex Travel); Accor / Fairmont stack"],
           ],
-          price: "$10,569",
+          price: "$9,781",
           priceSrc:
-            "Expedia OV total · Apr 17–24 2027 · non-refundable · $1,272/nt · was $13,089 · as of Oct 6 2026 PT",
+            "Expedia OV total · Nov 10–17 2026 · High / splurge · as of Oct 6 2026 PT (Apr week was ~$10,569)",
           links: [
             { label: "Amex FHR", href: "https://www.americanexpress.com/en-us/travel/discover/property/Hawaii-US/Wailea/fairmont-kea-lani-maui", solid: true },
             { label: "Official", href: "https://www.fairmont.com/en/hotels/hawaii-maui/fairmont-kea-lani.html" },
@@ -80,8 +123,8 @@
           ],
         },
         {
-          tag: "Shortlist · Adults-only Relais & Châteaux",
-          shortlist: true,
+          tag: "High / splurge · Adults-only Relais & Châteaux",
+          shortlist: false,
           name: "Hotel Wailea",
           blurb:
             "Panoramic Pacific from elevated lanais (~300 ft). Adults-only (max 2/suite). Ideal if “view from the room + romance” beats walk-onto-sand.",
@@ -89,9 +132,9 @@
             ["Request", "Ocean View One Bedroom Suite; stretch to Celebration Ocean View for top-floor best views"],
             ["Trade-off", "Not beachfront — shuttle to sand. Confirm FHR live on Amex Travel."],
           ],
-          price: "$8,692",
+          price: "$15,427",
           priceSrc:
-            "Expedia OV total · Apr 17–24 2027 · non-refundable · $1,046/nt · was $11,305 · as of Oct 6 2026 PT",
+            "Expedia OV total · Nov 10–17 2026 · High / splurge · as of Oct 6 2026 PT (Apr week was ~$8,692)",
           links: [
             { label: "Suites", href: "https://www.hotelwailea.com/suites/", solid: true },
             { label: "Official", href: "https://www.hotelwailea.com/" },
@@ -257,15 +300,31 @@
         companion:
           "Companion Pass helps on SJC–HNL Southwest, but this brief still prefers Maui’s resort density. WN to HNL is useful if you choose Oahu for city+beach — less of a “resort seclusion” win than SJC–OGG for Maui.",
         snapshots: [
-          { window: "Shoulder windows", price: "Estimate", detail: "Often competitive with OGG; pull live Google Flights — not scraped for this page" },
-          { window: "HVCB context", price: "SFO avg", detail: "Quarterly Hawaiʻi averages ~$540–650 base/pax — not HNL-specific live quotes" },
+          { window: "Cheapest cash (2 pax)", price: "~$739", detail: "SJC Southwest Companion Pass option · scan Oct 6 2026 PT" },
+          { window: "CP From (Dot Nov)", price: "~$426", detail: "~$415 + $11 companion taxes · seats not held" },
         ],
       },
       shortlist:
-        "Ocean-view angle is strongest at Halekulani (Waikiki iconic) and Four Seasons Oahu / Ko Olina (lagoon resorts). Prices below are planning estimates — not Expedia Apr scrapes. Label: estimates as of Oct 6, 2026 PT.",
+        "Default Low/Base: Hyatt Place Waikiki Beach $1,655 (Expedia Nov 10–17, city view + breakfast). Halekulani / FS Ko Olina are High step-up estimates.",
       hotels: [
         {
-          tag: "Waikiki icon · estimate",
+          tag: "Recommended · Mid-range (Low/Base)",
+          shortlist: true,
+          name: "Hyatt Place Waikiki Beach",
+          blurb:
+            "City view + breakfast included. Live Expedia total Nov 10–17 2026 — Dot-budget mid-range for Oahu Low/Base.",
+          meta: [
+            ["Room", "Deluxe 1 King + sofa · city view · breakfast"],
+            ["Refundable", "Fully refundable before Nov 7 (confirm live)"],
+          ],
+          price: "$1,655",
+          priceSrc: "Expedia live · Nov 10–17 2026 · 7n · $199/nt · as of Oct 7 2026 PT",
+          links: [
+            { label: "Expedia", href: "https://www.expedia.com/Honolulu-Hotels-Hyatt-Place-Waikiki-Beach.h2766.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2", solid: true },
+          ],
+        },
+        {
+          tag: "High step-up · Waikiki icon · estimate",
           name: "Halekulani",
           blurb:
             "Classic Waikiki oceanfront luxury; House Without a Key sunset vibe. True ocean-facing categories, but urban beach setting — less secluded than Wailea.",
@@ -401,18 +460,34 @@
           { route: "SJC → KOA", note: "No nonstop (Oct 2026 HVCB) — connecting only" },
         ],
         companion:
-          "Companion Pass does not help the same way: no SJC–KOA Southwest nonstop. You’d either connect (breaks the nonstop brief) or fly two paid SFO tickets. Prefer Maui if Companion Pass + SJC WN is a priority.",
+          "No SJC–KOA Southwest nonstop in HVCB grid — cash nonstops are SFO. Dot still shows a CP “From” (~$511+$11) for Nov; treat as estimate (seats not held), not a held nonstop. Prefer Maui if CP + SJC WN is the priority.",
         snapshots: [
-          { window: "Shoulder windows", price: "Estimate", detail: "Pull live SFO–KOA nonstops — not scraped on this page" },
-          { window: "Constraint", price: "SFO only", detail: "Nonstop brief ⇒ no SJC origin for KOA" },
+          { window: "Cheapest cash (2 pax)", price: "~$913", detail: "Mar 2–9 2027 · improved from ~$1,033 Nov 6–13" },
+          { window: "CP From (Dot Nov)", price: "~$522", detail: "~$511 + $11 companion taxes · seats not held" },
         ],
       },
       shortlist:
-        "Top OV luxury: Four Seasons Hualalai and Fairmont Orchid. Nightly figures are planning estimates — not Expedia Apr Maui scrapes. As of Oct 6, 2026 PT.",
+        "Default Low/Base: Courtyard King Kamehameha’s Kona Beach $2,075 (Expedia Nov 10–17, resort view; OV alt $2,474). FS Hualalai / Fairmont Orchid are High step-up estimates.",
       hotels: [
         {
-          tag: "Kohala · often #1 statewide · estimate",
+          tag: "Recommended · Mid-range (Low/Base)",
           shortlist: true,
+          name: "Courtyard King Kamehameha’s Kona Beach",
+          blurb:
+            "Resort-view 2 Queen. Live Expedia total Nov 10–17 2026. Kona Coast View alt ~$2,474 same week.",
+          meta: [
+            ["Room", "2 Queen · Resort View (OV alt available)"],
+            ["Refundable", "Fully refundable before Nov 7 · pay later (confirm live)"],
+          ],
+          price: "$2,075",
+          priceSrc: "Expedia live · Nov 10–17 2026 · 7n · $250/nt · as of Oct 7 2026 PT",
+          links: [
+            { label: "Expedia", href: "https://www.expedia.com/Kailua-Kona-Hotels-Courtyard-By-Marriott-King-Kamehamehas-Kona-Beach-Hotel.h21741.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2", solid: true },
+          ],
+        },
+        {
+          tag: "High step-up · Kohala · estimate",
+          shortlist: false,
           name: "Four Seasons Resort Hualalai",
           blurb:
             "Benchmark Big Island luxury on the Kona-Kohala coast — lava rock pools, private beach club feel, strong ocean-facing categories. Frequently cited as Hawaiʻi’s top resort.",
@@ -428,8 +503,8 @@
           ],
         },
         {
-          tag: "Kohala · beachfront · estimate",
-          shortlist: true,
+          tag: "High step-up · Kohala · estimate",
+          shortlist: false,
           name: "Fairmont Orchid",
           blurb:
             "Full-service Kohala Coast resort with beach, spa, and golf. Solid ocean-view inventory; more classic resort scale than Hualalai’s intimate luxury.",
@@ -550,17 +625,33 @@
           { route: "SJC → LIH", note: "No nonstop (Oct 2026 HVCB)" },
         ],
         companion:
-          "Southwest Companion Pass doesn’t unlock a SJC–LIH nonstop the way it can for OGG. Kauai means two paid SFO tickets (or a connection that breaks the nonstop brief).",
+          "No SJC–LIH Southwest nonstop in HVCB grid — cash nonstops are SFO. Dot still shows a CP “From” (~$325+$11) for Nov; treat as estimate (seats not held). Maui remains the cleaner CP nonstop story.",
         snapshots: [
-          { window: "Shoulder windows", price: "Estimate", detail: "Pull live SFO–LIH — not scraped on this page" },
-          { window: "Constraint", price: "SFO only", detail: "Nonstop brief ⇒ no SJC origin for LIH" },
+          { window: "Cheapest cash (2 pax)", price: "~$721", detail: "Nov window ~Nov 12–19 · scan Oct 6 2026 PT" },
+          { window: "CP From (Dot Nov)", price: "~$336", detail: "~$325 + $11 companion taxes · seats not held" },
         ],
       },
       shortlist:
-        "North Shore / Poipu luxury ocean-view angle. Cards below are brief planning notes with estimate bands — as of Oct 6, 2026 PT. Verify live.",
+        "Default Low/Base: Kauai Shores Hotel $2,335 garden view (Expedia Nov 10–17). Poipu / North Shore luxury is High step-up (~2× mid estimate).",
       hotels: [
         {
-          tag: "North Shore · estimate",
+          tag: "Recommended · Mid-range (Low/Base)",
+          shortlist: true,
+          name: "Kauai Shores Hotel",
+          blurb:
+            "Garden-view renovated room; parking included. Live Expedia total Nov 10–17 2026 — Dot-budget mid-range for Kauai Low/Base.",
+          meta: [
+            ["Room", "Garden View (renovated) · parking included"],
+            ["Refundable", "Fully refundable before Nov 7 (confirm live)"],
+          ],
+          price: "$2,335",
+          priceSrc: "Expedia live · Nov 10–17 2026 · 7n · $281/nt · as of Oct 7 2026 PT",
+          links: [
+            { label: "Expedia", href: "https://www.expedia.com/Kapaa-Hotels-Kauai-Shores-Hotel.h9733.Hotel-Information?chkin=2026-11-10&chkout=2026-11-17&rm1=a2", solid: true },
+          ],
+        },
+        {
+          tag: "High step-up · North Shore · estimate",
           name: "1 Hotel Hanalei Bay / Princeville area",
           blurb:
             "North Shore drama — cliffs, Hanalei views, quieter luxury. Weather can be wetter than Poipu; views can be spectacular on clear days.",
@@ -575,7 +666,7 @@
           ],
         },
         {
-          tag: "Poipu · south shore · estimate",
+          tag: "High step-up · Poipu · estimate",
           name: "Poipu luxury (Grand Hyatt Kauai & peers)",
           blurb:
             "Sunniest side of Kauai; classic resort beaches. Grand Hyatt Kauai and nearby luxury properties offer ocean-facing rooms — Hyatt points may apply at GH Kauai (check OV award inventory).",
@@ -782,6 +873,47 @@
       </div>`;
   }
 
+
+  function money(n) {
+    return "$" + Number(n).toLocaleString("en-US");
+  }
+
+  function tiersBlock(islandId) {
+    const t = TIERS[islandId];
+    if (!t) return "";
+    const order = ["low", "base", "high"];
+    const labels = { low: "Low", base: "Base", high: "High" };
+    const cards = order
+      .map((key) => {
+        const row = t[key];
+        const rec = row.recommend ? " is-recommended" : "";
+        const badge = row.recommend ? '<span class="tier-badge">Recommended default</span>' : "";
+        return `
+        <article class="tier-card tier-${key}${rec}">
+          ${badge}
+          <h4>${labels[key]}</h4>
+          <div class="tier-total">${money(row.total)}</div>
+          <p class="tier-dates">${escapeHtml(row.dates)}</p>
+          <ul class="tier-breakdown">
+            <li><span>Flights</span><strong>${money(row.flight)}</strong></li>
+            <li class="tier-note">${escapeHtml(row.flightNote)}</li>
+            <li><span>Hotel</span><strong>${money(row.hotel)}</strong></li>
+            <li class="tier-note">${escapeHtml(row.hotelNote)}</li>
+            <li><span>Other</span><strong>${money(row.other)}</strong></li>
+          </ul>
+          <p class="tier-stay">${escapeHtml(row.stay)}</p>
+        </article>`;
+      })
+      .join("");
+    return `
+      <div class="island-tiers-block" id="tiers">
+        <p class="section-label">All-in</p>
+        <h3>Low · Base · High</h3>
+        <p class="lede">2 adults · ~7 nights · Bay Area nonstops. Other = meals + ground + activities. CP = Companion Pass estimate (seats not held). Verified Oct 6–7 2026 PT.</p>
+        <div class="tier-grid">${cards}</div>
+      </div>`;
+  }
+
   function render(islandId) {
     const data = ISLANDS[islandId];
     if (!data || !els.panel) return;
@@ -802,15 +934,19 @@
       )
       .join("");
 
+    const tierBlock = tiersBlock(data.id);
+
     els.panel.innerHTML = `
       <div class="island-panel-inner" data-active-island="${escapeHtml(data.id)}">
         <div class="island-panel-head">
-          ${data.recommended ? '<span class="rec-badge">Recommended</span>' : ""}
+          ${data.recommended ? '<span class="rec-badge">Recommended · Low default</span>' : ""}
           <p class="section-label">${escapeHtml(data.eyebrow)}</p>
           <h2 id="island-panel-title">${escapeHtml(data.title)} <span class="airport-code">${escapeHtml(data.airport)}</span></h2>
           <p class="lede">${escapeHtml(data.pitch)}</p>
           <ul class="fit-list">${fit}</ul>
         </div>
+
+        ${tierBlock}
 
         <div class="island-flights">
           <h3>${escapeHtml(data.flights.headline)}</h3>
@@ -824,11 +960,9 @@
 
         <div class="island-hotels-block" id="hotels">
           <p class="section-label">Stay</p>
-          <h3 id="hotels-heading-dyn">Ocean-view hotels — ${escapeHtml(data.title)}</h3>
+          <h3 id="hotels-heading-dyn">Stays — ${escapeHtml(data.title)}</h3>
           <p class="lede">${escapeHtml(
-            data.id === "maui"
-              ? "Request Ocean View (or higher) at booking — skip Partial / Garden. Ask for highest floor and unobstructed sightline at check-in; Amex FHR upgrade when available helps."
-              : "Request Ocean View (or higher) where offered. Confirm categories live — many figures here are estimates."
+            "Low/Base lead with mid-range (live Expedia Nov 10–17 where shown). Wailea / luxury cards are High / splurge only. Confirm categories and refund rules live."
           )}</p>
           <div class="shortlist-banner">${data.shortlist}</div>
           <div class="hotel-grid">${data.hotels.map(hotelCard).join("")}</div>
@@ -860,18 +994,24 @@
     // Update nav brand subtly
     const brand = document.querySelector(".nav-brand");
     if (brand) {
-      brand.innerHTML = `${escapeHtml(data.name)} <span>·</span> Ocean View`;
+      brand.innerHTML = `${escapeHtml(data.name)} <span>·</span> Mid-range`;
     }
     const heroTitle = document.getElementById("hero-island-name");
     if (heroTitle) {
       heroTitle.textContent = data.name;
     }
     const heroPitch = document.getElementById("hero-pitch");
-    if (heroPitch && data.id === "maui") {
-      heroPitch.textContent =
-        "Seven nights in Wailea’s beachfront luxury strip — true ocean-view rooms, nonstop SFO–OGG, and Leo’s Hyatt + Amex FHR stack doing the heavy lifting.";
-    } else if (heroPitch) {
-      heroPitch.textContent = data.pitch;
+    if (heroPitch) {
+      const t = TIERS[data.id] && TIERS[data.id].low;
+      if (data.id === "maui" && t) {
+        heroPitch.textContent =
+          "Default path is mid-range: ~$541 nonstops + Kihei condo (~$1.4k) puts Maui Low near ~$3.3k all-in. Wailea Andaz is High / splurge only — not the plan default.";
+      } else if (t) {
+        heroPitch.textContent =
+          data.pitch + " Low all-in ≈ $" + t.total.toLocaleString("en-US") + " (recommended default).";
+      } else {
+        heroPitch.textContent = data.pitch;
+      }
     }
   }
 

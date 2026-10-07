@@ -1389,3 +1389,89 @@ body[data-selected-island="maui"] .island-chip[data-island-select="maui"] .chip-
 .activity-card:not(:has(.activity-media)) .tag {
   margin-top: 0;
 }
+
+
+/* —— All-in tier cards (Low / Base / High) —— */
+.island-tiers-block {
+  margin: 2rem 0 2.5rem;
+}
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (max-width: 900px) {
+  .tier-grid { grid-template-columns: 1fr; }
+}
+.tier-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(19, 111, 115, 0.12);
+  position: relative;
+}
+.tier-card.is-recommended,
+.tier-card.tier-low.is-recommended {
+  border: 2px solid var(--teal);
+  background: linear-gradient(180deg, var(--teal-soft), var(--white) 45%);
+}
+.tier-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--teal-deep);
+  background: rgba(19, 111, 115, 0.12);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  margin-bottom: 0.4rem;
+}
+.tier-card h4 {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  color: var(--teal-deep);
+  margin: 0 0 0.25rem;
+}
+.tier-total {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--coral-deep);
+  margin: 0.25rem 0 0.35rem;
+}
+.tier-dates {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+.tier-breakdown {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+}
+.tier-breakdown li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.tier-breakdown li.tier-note {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+  border-bottom: none;
+  padding: 0 0 0.35rem;
+}
+.tier-stay {
+  font-size: 0.88rem;
+  color: var(--ink);
+  margin: 0;
+  font-weight: 500;
+}
+.tier-card.tier-high .tier-total {
+  color: #8a4b3a;
+}
