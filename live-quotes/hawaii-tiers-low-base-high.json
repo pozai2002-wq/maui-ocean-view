@@ -16,7 +16,7 @@
   "fcf_note": {
     "fcf_2027_usd": 5400,
     "source": "2027 forecast FCF \u2248 $5.4k after BBP payoff (income \u2212 normalized spend \u2212 BBP)",
-    "fit": "2027 live: Maui Jan Low ~$4,725 fits ~$5.4k FCF (~$0.7k cushion). Other Lows ~$4.0\u20134.7k. Base/High over FCF."
+    "fit": "2027 live: Maui Jan Low ~$4,725 fits ~$5.4k FCF (~$0.7k cushion). Maui Base ~$5,564 (over FCF). Other Lows ~$4.0\u20134.7k. High over."
   },
   "islands": [
     {
@@ -39,13 +39,13 @@
           "dates": "Jan 19\u201326 2027",
           "flight_usd": 541,
           "flight_note": "Cash 2-pax RT",
-          "hotel_usd": 5347,
-          "hotel_note": "Mana Kai 2BR (1BR sold out) \u00b7 Expedia live \u2014 pricey for Base",
+          "hotel_usd": 3223,
+          "hotel_note": "Residence Inn Maui Wailea \u00b7 Expedia live Jan \u00b7 refundable",
           "other_usd": 1800,
           "other_note": "Fuller Dot-like other (default base band)",
-          "all_in_usd": 7688,
-          "stay_example": "Mana Kai Maui \u00b7 2BR Ali\u02bbi ocean view",
-          "stay_url": "https://www.expedia.com/Kihei-Hotels-Mana-Kai-Maui.h27810.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
+          "all_in_usd": 5564,
+          "stay_example": "Residence Inn by Marriott Maui Wailea",
+          "stay_url": "https://www.expedia.com/Kihei-Hotels-Residence-Inn-By-Marriott-Maui-Wailea.h12541875.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
         },
         "high": {
           "dates": "Jan 19\u201326 2027",

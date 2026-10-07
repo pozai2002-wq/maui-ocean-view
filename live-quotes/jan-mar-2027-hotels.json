@@ -13,10 +13,11 @@
       {
         "tier": "base",
         "island": "Maui",
-        "name": "Mana Kai Maui 2BR",
-        "total": 5347,
-        "nightly": 643,
-        "note": "1BR sold out"
+        "name": "Residence Inn Maui Wailea",
+        "total": 3223,
+        "nightly": 460,
+        "note": "refundable; replaced Mana Kai 2BR (over Base band)",
+        "url": "https://www.expedia.com/Kihei-Hotels-Residence-Inn-By-Marriott-Maui-Wailea.h12541875.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2"
       },
       {
         "tier": "high",
@@ -107,5 +108,5 @@
     "Kauai Mar": 4680
   },
   "fcf": 5400,
-  "fit": "All island Lows still fit under ~$5.4k FCF with thin cushion. Base/High do not."
+  "fit": "All island Lows fit under ~$5.4k FCF (~$0.7\u20131.4k cushion). Maui Base ~$5,564 still over FCF. High over."
 }

@@ -1,3 +1,6 @@
+## 2027 update (Oct 7)
+Maui Base = Residence Inn Maui Wailea **$3,223** hotel / all-in **~$5,564** (Jan 19–26). Mana Kai 2BR dropped (over Base band).
+
 # Hawaii all-in tiers — Low / Base / High
 
 As of **2026-10-07 PT** · 2 adults · ~7 nights · Bay Area nonstops.

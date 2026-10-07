@@ -11,7 +11,7 @@
   const TIERS = {
     maui: {
       low:  { dates: "Jan 19\u201326 2027", flight: 541, flightNote: "Cash 2-pax RT \u00b7 SFO United", hotel: 2784, hotelNote: "Kihei Akahi #C-520 \u00b7 Expedia live Jan", other: 1400, total: 4725, stay: "Kihei Akahi #C-520 condo", stayUrl: "https://www.expedia.com/Kihei-Hotels-Kihei-Akahi-C-520-Tastefully-Updated.h56513057.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2", recommend: true },
-      base: { dates: "Jan 19\u201326 2027", flight: 541, flightNote: "Cash 2-pax RT", hotel: 5347, hotelNote: "Mana Kai 2BR (1BR sold out) \u00b7 Expedia live \u2014 pricey for Base", other: 1800, total: 7688, stay: "Mana Kai Maui \u00b7 2BR Ali\u02bbi ocean view", stayUrl: "https://www.expedia.com/Kihei-Hotels-Mana-Kai-Maui.h27810.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2" },
+      base: { dates: "Jan 19\u201326 2027", flight: 541, flightNote: "Cash 2-pax RT", hotel: 3223, hotelNote: "Residence Inn Maui Wailea \u00b7 Expedia live Jan \u00b7 refundable", other: 1800, total: 5564, stay: "Residence Inn by Marriott Maui Wailea", stayUrl: "https://www.expedia.com/Kihei-Hotels-Residence-Inn-By-Marriott-Maui-Wailea.h12541875.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2" },
       high: { dates: "Jan 19\u201326 2027", flight: 541, flightNote: "Same cheap week (or peakish ~$1k)", hotel: 7633, hotelNote: "Andaz Maui resort view \u00b7 Expedia live", other: 2400, total: 10574, stay: "Andaz Maui at Wailea \u00b7 resort view", stayUrl: "https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2" }
     },
     oahu: {
@@ -64,7 +64,7 @@
         ],
       },
       shortlist:
-        "Low: Kihei Akahi $2,784 (Jan 19–26). Base: Mana Kai 2BR $5,347 (1BR sold out — looking for better Base). High: Andaz $7,633.",
+        "Low: Kihei Akahi $2,784 (Jan 19–26). Base: Residence Inn Maui Wailea $3,223. High: Andaz $7,633.",
       hotels: [
         {
           tag: "Recommended · Mid-range (Low)",
