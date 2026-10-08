@@ -10,22 +10,74 @@
   /** All-in Low/Base/High — verified Oct 6–7 2026 PT (see live-quotes/hawaii-tiers-low-base-high.json) */
   const TIERS = {
     maui: {
-      low:  { dates: "Jan 19\u201326 2027", flight: 541, flightNote: "Cash 2-pax RT \u00b7 SFO United", hotel: 2784, hotelNote: "Kihei Akahi #C-520 \u00b7 Expedia live Jan", other: 1400, total: 4725, stay: "Kihei Akahi #C-520 condo", stayUrl: "https://www.expedia.com/Kihei-Hotels-Kihei-Akahi-C-520-Tastefully-Updated.h56513057.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2", recommend: true },
+      low:  {
+        benefitsLow: true,
+        recommend: true,
+        dates: "Thu Jan 7 \u2192 Thu Jan 14, 2027",
+        cashLabel: "~$1,750",
+        status: "ESTIMATE",
+        swLabel: "27,000 pts",
+        hyattLabel: "~130,000 pts",
+        note: "Hotel ESTIMATE \u00b7 Hyatt award check pending. Cash covers taxes, ~2 paid nights, resort fee, transfer, and one bag. Meals not included.",
+        flightLabel: "Southwest #4849 / #2972",
+        flightUrl: "https://www.southwest.com/air/booking/select-depart.html?adultPassengersCount=1&departureDate=2027-01-07&departureTimeOfDay=ALL_DAY&destinationAirportCode=OGG&fareType=POINTS&originationAirportCode=OAK&passengerType=ADULT&returnDate=2027-01-14&returnTimeOfDay=ALL_DAY&tripType=roundtrip",
+        stay: "Hyatt Regency Maui",
+        stayUrl: "https://www.hyatt.com/shop/rooms/oggrm?checkinDate=2027-01-07&checkoutDate=2027-01-14&rooms=1&adults=2&kids=0&rateFilter=woh"
+      },
       base: { dates: "Jan 19\u201326 2027", flight: 541, flightNote: "Cash 2-pax RT", hotel: 3223, hotelNote: "Residence Inn Maui Wailea \u00b7 Expedia live Jan \u00b7 refundable", other: 1800, total: 5564, stay: "Residence Inn by Marriott Maui Wailea", stayUrl: "https://www.expedia.com/Kihei-Hotels-Residence-Inn-By-Marriott-Maui-Wailea.h12541875.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2" },
       high: { dates: "Jan 19\u201326 2027", flight: 541, flightNote: "Same cheap week (or peakish ~$1k)", hotel: 7633, hotelNote: "Andaz Maui resort view \u00b7 Expedia live", other: 2400, total: 10574, stay: "Andaz Maui at Wailea \u00b7 resort view", stayUrl: "https://www.expedia.com/Kihei-Hotels-Andaz-Maui-At-Wailea-Resort-A-Concept-By-Hyatt.h2552.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2" }
     },
     oahu: {
-      low:  { dates: "Jan 19\u201326 2027", flight: 801, flightNote: "Cash proxy \u00b7 Mar HNL nonstop $801 (Jan not re-scraped)", hotel: 1859, hotelNote: "Hyatt Place Waikiki \u00b7 Expedia live Jan", other: 1340, total: 4000, stay: "Hyatt Place Waikiki \u00b7 city view + breakfast", stayUrl: "https://www.expedia.com/Honolulu-Hotels-Hyatt-Place-Waikiki-Beach.h2766.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2", recommend: true },
+      low:  {
+        benefitsLow: true,
+        recommend: true,
+        dates: "Tue Jan 19 \u2192 Tue Jan 26, 2027",
+        cashLabel: "~$200",
+        status: "ESTIMATE",
+        swLabel: "24,000 pts",
+        hyattLabel: "~105,000 pts",
+        note: "Hotel ESTIMATE \u00b7 Hyatt award check pending. Cash is taxes + transfers + one bag. All-cash equivalent ~$2,386.",
+        flightLabel: "Southwest #1949 / #1774",
+        flightUrl: "https://www.southwest.com/air/booking/select-depart.html?adultPassengersCount=1&departureDate=2027-01-19&departureTimeOfDay=ALL_DAY&destinationAirportCode=HNL&fareType=POINTS&originationAirportCode=SJC&passengerType=ADULT&returnDate=2027-01-26&returnTimeOfDay=ALL_DAY&tripType=roundtrip",
+        stay: "Hyatt Place Waikiki Beach",
+        stayUrl: "https://www.hyatt.com/shop/rooms/hnlzw?checkinDate=2027-01-19&checkoutDate=2027-01-26&rooms=1&adults=2&kids=0&rateFilter=woh"
+      },
       base: { dates: "Jan 19\u201326 2027", flight: 801, flightNote: "Cash proxy Mar HNL $801", hotel: 3052, hotelNote: "OUTRIGGER Reef \u00b7 Expedia live Jan (NR rate)", other: 1800, total: 5653, stay: "OUTRIGGER Reef Waikiki Beach Resort", stayUrl: "https://www.expedia.com/Honolulu-Hotels-OUTRIGGER-Reef-Waikiki-Beach-Resort.h23249.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2" },
       high: { dates: "Jan 19\u201326 2027", flight: 1009, flightNote: "Apr\u2013Jul HNL plateau ~$1,009", hotel: 3318, hotelNote: "Sheraton Waikiki (Halekulani sold out Jan) \u00b7 similar-props list", other: 2400, total: 6727, stay: "Sheraton Waikiki Beach Resort (Halekulani N/A)", stayUrl: "https://www.expedia.com/Honolulu-Hotels-Sheraton-Waikiki.h10159.Hotel-Information?chkin=2027-01-19&chkout=2027-01-26&rm1=a2" }
     },
     bigisland: {
-      low:  { dates: "Mar 2\u20139 2027", flight: 913, flightNote: "Cash 2-pax RT \u00b7 SFO Alaska", hotel: 2275, hotelNote: "Courtyard Kona resort view \u00b7 Expedia live Mar", other: 1400, total: 4588, stay: "Courtyard Kona Beach \u00b7 resort view", stayUrl: "https://www.expedia.com/Kailua-Kona-Hotels-Courtyard-By-Marriott-King-Kamehamehas-Kona-Beach-Hotel.h21741.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2", recommend: true },
+      low:  {
+        benefitsLow: true,
+        recommend: true,
+        dates: "Tue Feb 2 \u2192 Tue Feb 9, 2027",
+        cashLabel: "~$2,600",
+        status: "CONFIRMED",
+        swLabel: "none (Alaska cash)",
+        hyattLabel: "none",
+        note: "CONFIRMED live. Alaska nonstop SFO\u2013KOA, $718 for two, is inside the cash total. Courtyard Kona is over budget.",
+        flightLabel: "Alaska SFO\u2013KOA",
+        flightUrl: "https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNy0wMi0wMmoHCAESA1NGT3IHCAESA0tPQRoeEgoyMDI3LTAyLTA5agcIARIDS09BcgcIARIDU0ZPQAFIAZgBAQ&curr=USD&hl=en",
+        stay: "Holua Resort",
+        stayUrl: "https://www.expedia.com/h890813.Hotel-Information"
+      },
       base: { dates: "Mar 2\u20139 2027", flight: 913, flightNote: "Cash 2-pax RT", hotel: 2691, hotelNote: "Outrigger Kona \u00b7 Expedia live Mar (~ from discount math)", other: 2178, total: 5782, stay: "Outrigger Kona Resort and Spa", stayUrl: "https://www.expedia.com/Kailua-Kona-Hotels-Outrigger-Kona-Resort-And-Spa.h49175916.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2" },
       high: { dates: "Mar 2\u20139 2027", flight: 913, flightNote: "Same Mar week", hotel: 5091, hotelNote: "Fairmont Orchid garden view \u00b7 Expedia live Mar", other: 2400, total: 8404, stay: "Fairmont Orchid, Kohala Coast", stayUrl: "https://www.expedia.com/Kamuela-Hotels-Fairmont-Orchid.h25190.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2" }
     },
     kauai: {
-      low:  { dates: "Mar 2\u20139 2027", flight: 721, flightNote: "Cash 2-pax RT \u00b7 SFO United \u00b7 Mar\u2013Jul island winner", hotel: 2559, hotelNote: "Kauai Shores \u00b7 Expedia live Mar", other: 1400, total: 4680, stay: "Kauai Shores \u00b7 renovated standard", stayUrl: "https://www.expedia.com/Kapaa-Hotels-Kauai-Shores-Hotel.h9733.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2", recommend: true },
+      low:  {
+        benefitsLow: true,
+        recommend: true,
+        dates: "Tue Feb 2 \u2192 Tue Feb 9, 2027",
+        cashLabel: "~$2,950",
+        status: "CONFIRMED",
+        swLabel: "25,000 pts",
+        hyattLabel: "none",
+        note: "CONFIRMED live. Kauai Shores $2,538 + ~$291 resort fee. Cheaper alternates are on the under-$3k section.",
+        flightLabel: "Southwest #2137 / #3379",
+        flightUrl: "https://www.southwest.com/air/booking/select-depart.html?adultPassengersCount=1&departureDate=2027-02-02&departureTimeOfDay=ALL_DAY&destinationAirportCode=LIH&fareType=POINTS&originationAirportCode=OAK&passengerType=ADULT&returnDate=2027-02-09&returnTimeOfDay=ALL_DAY&tripType=roundtrip",
+        stay: "Kauai Shores Hotel",
+        stayUrl: "https://www.expedia.com/h9733.Hotel-Information"
+      },
       base: { dates: "Mar 2\u20139 2027", flight: 721, flightNote: "Cash 2-pax RT", hotel: 3382, hotelNote: "Sheraton Kauai Resort Villas \u00b7 Expedia live Mar", other: 2306, total: 6409, stay: "Sheraton Kauai Resort Villas \u00b7 Poipu", stayUrl: "https://www.expedia.com/Koloa-Hotels-Sheraton-Kauai-Resort-Villas.h41815407.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2" },
       high: { dates: "Mar 2\u20139 2027", flight: 1009, flightNote: "Apr\u2013Jul LIH plateau ~$1,009", hotel: 4512, hotelNote: "Koloa Landing \u00b7 Expedia live Mar", other: 2400, total: 7921, stay: "Koloa Landing Resort at Poipu", stayUrl: "https://www.expedia.com/Koloa-Hotels-Koloa-Landing-Resort-At-Poipu.h3812333.Hotel-Information?chkin=2027-03-02&chkout=2027-03-09&rm1=a2" }
     }
@@ -38,11 +90,11 @@
       airport: "OGG",
       recommended: true,
       title: "Maui / Kihei–Wailea",
-      eyebrow: "Recommended · Mid-range default (Low tier)",
+      eyebrow: "Recommended · Under $3k Low",
       pitch:
-        "2027 primary: Jan 19–26 (~$541 flights). Live Expedia Low = Kihei Akahi ~$2,784 → all-in ~$4.7k (still under ~$5.4k FCF). Jan hotels are higher than Nov 2026. Andaz = High only.",
+        "Low is Hyatt Regency Maui, Thu Jan 7–Thu Jan 14: ~$1,750 cash (ESTIMATE) plus 27,000 Southwest points and ~130,000 Hyatt points. Meals are not included. Andaz stays High only.",
       fit: [
-        "Lowest all-in Low tier (~$4,725 Jan 2027) — recommended default",
+        "Under-$3k Low: ~$1,750 cash + points (hotel ESTIMATE, Hyatt award check pending)",
         "Mid-range: Kihei ocean-view / near-beach condos ~$1,397–$1,777 (7n)",
         "High / splurge only: Andaz / Fairmont / Hotel Wailea OV",
         "Nonstops from SFO + SJC (Alaska, United; WN SJC~Nov 21 2026)",
@@ -64,10 +116,10 @@
         ],
       },
       shortlist:
-        "Low: Kihei Akahi $2,784 (Jan 19–26). Base: Residence Inn Maui Wailea $3,223. High: Andaz $7,633.",
+        "Low: Hyatt Regency Maui ~$1,750 cash (ESTIMATE, Jan 7–14). Base: Residence Inn Maui Wailea $3,223. High: Andaz $7,633.",
       hotels: [
         {
-          tag: "Recommended · Mid-range (Low)",
+          tag: "Earlier snapshot · not the under-$3k Low",
           shortlist: true,
           name: "Kihei Akahi #C-520",
           blurb:
@@ -305,10 +357,10 @@
         ],
       },
       shortlist:
-        "Low: Hyatt Place $1,859 (Jan). Base: OUTRIGGER Reef $3,052. High: Sheraton Waikiki $3,318 (Halekulani sold out Jan).",
+        "Low: Hyatt Place Waikiki ~$200 cash + ~105k Hyatt pts (ESTIMATE, Jan 19–26). Base: OUTRIGGER Reef $3,052. High: Sheraton Waikiki $3,318 (Halekulani sold out Jan).",
       hotels: [
         {
-          tag: "Recommended · Mid-range (Low)",
+          tag: "Earlier snapshot · not the under-$3k Low",
           shortlist: true,
           name: "Hyatt Place Waikiki Beach",
           blurb:
@@ -467,10 +519,10 @@
         ],
       },
       shortlist:
-        "Low: Courtyard Kona $2,275 (Mar 2–9). Base: Outrigger Kona ~$2,691. High: Fairmont Orchid $5,091.",
+        "Low: Holua Resort ~$2,600 cash (CONFIRMED, Feb 2–9). Courtyard Kona is over budget at $3,272. Base: Outrigger Kona ~$2,691. High: Fairmont Orchid $5,091.",
       hotels: [
         {
-          tag: "Recommended · Mid-range (Low)",
+          tag: "Earlier snapshot · over the under-$3k Low",
           shortlist: true,
           name: "Courtyard King Kamehameha’s Kona Beach",
           blurb:
@@ -632,10 +684,10 @@
         ],
       },
       shortlist:
-        "Low: Kauai Shores $2,559 (Mar 2–9). Base: Sheraton Villas $3,382. High: Koloa Landing $4,512.",
+        "Low: Kauai Shores ~$2,950 cash (CONFIRMED, Feb 2–9) + 25,000 Southwest pts. Base: Sheraton Villas $3,382. High: Koloa Landing $4,512.",
       hotels: [
         {
-          tag: "Recommended · Mid-range (Low)",
+          tag: "Earlier snapshot · see under-$3k Low for Feb 2–9",
           shortlist: true,
           name: "Kauai Shores Hotel",
           blurb:
@@ -878,6 +930,28 @@
     return "$" + Number(n).toLocaleString("en-US");
   }
 
+  function benefitsLowCard(row) {
+    const statusClass = row.status === "CONFIRMED" ? "status-confirmed" : "status-estimate";
+    const flight = row.flightUrl
+      ? `<a href="${escapeHtml(row.flightUrl)}" target="_blank" rel="noopener">${escapeHtml(row.flightLabel)}</a>`
+      : escapeHtml(row.flightLabel || "");
+    return `
+        <article class="tier-card tier-low is-recommended">
+          <span class="tier-badge">Under $3k · benefits</span>
+          <h4>Low</h4>
+          <div class="tier-total">${escapeHtml(row.cashLabel)}</div>
+          <p class="tier-dates">${escapeHtml(row.dates)} <span class="status-pill ${statusClass}">${escapeHtml(row.status)}</span></p>
+          <ul class="tier-breakdown">
+            <li><span>Southwest</span><strong>${escapeHtml(row.swLabel)}</strong></li>
+            <li><span>Hyatt</span><strong>${escapeHtml(row.hyattLabel)}</strong></li>
+            <li class="tier-note">${escapeHtml(row.note)}</li>
+            <li class="tier-note">Flights: ${flight}</li>
+          </ul>
+          <p class="tier-stay"><a href="${escapeHtml(row.stayUrl)}" target="_blank" rel="noopener">${escapeHtml(row.stay)}</a></p>
+          <p class="tier-more"><a href="#under-3k">Dates, alternates, and refund rules</a></p>
+        </article>`;
+  }
+
   function tiersBlock(islandId) {
     const t = TIERS[islandId];
     if (!t) return "";
@@ -886,6 +960,7 @@
     const cards = order
       .map((key) => {
         const row = t[key];
+        if (key === "low" && row.benefitsLow) return benefitsLowCard(row);
         const rec = row.recommend ? " is-recommended" : "";
         const badge = row.recommend ? '<span class="tier-badge">Recommended default</span>' : "";
         return `
@@ -909,7 +984,7 @@
       <div class="island-tiers-block" id="tiers">
         <p class="section-label">All-in</p>
         <h3>Low · Base · High</h3>
-        <p class="lede">2 adults · ~7 nights · Bay Area nonstops. Other = meals + ground + activities. CP = Companion Pass estimate (seats not held). Verified Oct 6–7 2026 PT.</p>
+        <p class="lede">Low is the Oct 7, 2026 PT benefits total for 2 adults: flights + hotel + taxes/fees + resort fee + airport transfer + one bag. Meals and activities are not included, and Southwest and Hyatt points are separate. Base and High still include meals, ground, and activities from the earlier snapshot. <a href="#under-3k">Full under-$3,000 breakdown</a>.</p>
         <div class="tier-grid">${cards}</div>
       </div>`;
   }
@@ -962,7 +1037,7 @@
           <p class="section-label">Stay</p>
           <h3 id="hotels-heading-dyn">Stays — ${escapeHtml(data.title)}</h3>
           <p class="lede">${escapeHtml(
-            "Each tier uses a distinct named hotel (live Expedia Nov 10–17). Hotel names on Low/Base/High cards are clickable. Confirm categories and refund rules live."
+            "Base and High each use a distinct named hotel. The under-$3,000 Low stay, flights, and alternates are in the section above. Hotel names on the tier cards are clickable."
           )}</p>
           <div class="shortlist-banner">${data.shortlist}</div>
           <div class="hotel-grid">${data.hotels.map(hotelCard).join("")}</div>
@@ -994,7 +1069,7 @@
     // Update nav brand subtly
     const brand = document.querySelector(".nav-brand");
     if (brand) {
-      brand.innerHTML = `${escapeHtml(data.name)} <span>·</span> Mid-range`;
+      brand.innerHTML = `${escapeHtml(data.name)} <span>·</span> Under $3k`;
     }
     const heroTitle = document.getElementById("hero-island-name");
     if (heroTitle) {
@@ -1003,12 +1078,9 @@
     const heroPitch = document.getElementById("hero-pitch");
     if (heroPitch) {
       const t = TIERS[data.id] && TIERS[data.id].low;
-      if (data.id === "maui" && t) {
+      if (t && t.benefitsLow) {
         heroPitch.textContent =
-          "Default path is mid-range: ~$541 nonstops + Kihei condo (~$1.4k) puts Maui Low near ~$3.3k all-in. Wailea Andaz is High / splurge only — not the plan default.";
-      } else if (t) {
-        heroPitch.textContent =
-          data.pitch + " Low all-in ≈ $" + t.total.toLocaleString("en-US") + " (recommended default).";
+          data.name + " Low is " + t.cashLabel + " cash all-in for 2 adults (" + t.dates + "). Southwest and Hyatt points are separate. Meals and activities are not included. Base and High are unchanged.";
       } else {
         heroPitch.textContent = data.pitch;
       }

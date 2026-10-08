@@ -1484,3 +1484,224 @@ body[data-selected-island="maui"] .island-chip[data-island-select="maui"] .chip-
 .tier-card.tier-high .tier-total {
   color: #8a4b3a;
 }
+.tier-more {
+  margin: 0.55rem 0 0;
+  font-size: 0.82rem;
+}
+.tier-dates .status-pill {
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+/* —— Under $3,000 Low —— */
+.asof-stamp {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+  background: var(--white);
+  border: 1px solid rgba(19, 111, 115, 0.28);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  margin-bottom: 0.85rem;
+}
+.asof-stamp-end {
+  display: block;
+  width: fit-content;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.benefit-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+.benefit-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1rem 1.05rem 1.05rem;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--teal);
+}
+.benefit-item h3 {
+  font-family: var(--display);
+  font-size: 1.02rem;
+  color: var(--teal-deep);
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+}
+.benefit-item p {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.benefit-item p.benefit-stat {
+  font-family: var(--display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--coral-deep);
+  line-height: 1.1;
+  margin: 0.2rem 0 0.35rem;
+}
+.benefit-pending { border-top-color: var(--gold); }
+.benefit-link { margin-top: 0.45rem; }
+.low-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+@media (min-width: 980px) {
+  .low-grid { grid-template-columns: 1fr 1fr; }
+}
+.low-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem 1.25rem 1.1rem;
+  border: 1px solid rgba(19, 111, 115, 0.12);
+  min-width: 0;
+}
+.low-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+.low-card h3 {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  color: var(--teal-deep);
+  line-height: 1.2;
+}
+.low-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.status-pill {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  line-height: 1.3;
+}
+.status-confirmed {
+  background: var(--teal);
+  color: #fff;
+}
+.status-estimate {
+  background: var(--gold);
+  color: var(--ink);
+}
+.low-totals {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(10, 61, 63, 0.08);
+}
+.low-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.low-cash {
+  font-family: var(--display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--coral-deep);
+  line-height: 1.05;
+}
+.low-cash-note,
+.low-fine,
+.low-refund {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.low-fine { margin-top: 0.4rem; }
+.low-points {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+}
+.low-points div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-width: 11rem;
+  background: var(--sand);
+  border-radius: 10px;
+  padding: 0.4rem 0.7rem;
+}
+.low-points dt {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.low-points dd {
+  margin: 0;
+  font-weight: 700;
+  color: var(--teal-deep);
+}
+.low-block { margin-top: 0.95rem; }
+.low-block h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.4rem;
+}
+.flight-list {
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}
+.flight-list li { font-size: 0.92rem; }
+.hotel-pick {
+  background: var(--sand);
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+  margin-top: 0.5rem;
+}
+.hotel-pick.is-rec {
+  background: var(--teal-soft);
+  border: 1px solid rgba(19, 111, 115, 0.28);
+}
+.pick-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hotel-pick.is-rec .pick-label { color: var(--teal-deep); }
+.pick-name {
+  font-weight: 700;
+  margin: 0.12rem 0 0.2rem;
+}
+.hotel-pick p:last-child {
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+.low-refund { margin-top: 0.9rem; }
+@media (max-width: 640px) {
+  .low-cash { font-size: 1.7rem; }
+  .low-card h3 { font-size: 1.18rem; }
+  .low-points div { min-width: 0; width: 100%; }
+  .status-pill { white-space: normal; }
+}
